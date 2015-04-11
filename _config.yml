@@ -1,7 +1,7 @@
-name: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+name: Sadık Ay
+description: A bit software, a bit travel and completely freedom.
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://sadikay.github.com.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
