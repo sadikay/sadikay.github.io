@@ -1,7 +1,7 @@
 name: Sadık Ay
 description: A bit software, a bit travel and completely freedom.
 
-url: http://sadikay.github.com.io
+url: https://sadikay.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
