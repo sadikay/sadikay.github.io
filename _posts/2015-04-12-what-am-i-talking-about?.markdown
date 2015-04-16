@@ -4,16 +4,28 @@ title:  "What am I Talking About?"
 date:   2015-04-12
 ---
 <img src="https://scontent-ams.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/11054324_10153103065489424_2355222707298849398_n.jpg?oh=3b856a84ce9a1b4083ce8387c50319d8&oe=5599D548"/>
-<p class="intro"><span class="dropcap">M</span>erhabalar, bu ilk yazımda bu blogpost' ta neler bulabileceğinizi ve genel olarak nelere değineceğim hakkında sizlere biraz ipucu vereceğim ;)</p>
-<p class="intro">Bu blogpostu tanımlamak için kulllanılacak en doğru cümle sanırım şu olacaktır.
- <b>Biraz yazılım, biraz seyahat ve tamamen özgür.</b></p>
+<p class="intro"><span class="dropcap">Hi</span> everyone! In the my first post we ll talk about which kind of content you could find in this blog. </p>
+<p class="intro">To defining the blog I think the best sentence is:
+ <b>Some software, some travel and completely freedom.</b></p>
 
-Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.
+<p>
+  So, let's talk about to which software technologies usually we ll touch on.
 
-Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.
+  In this blog you could find which technologies are trend, which technologies have advantages, which technologies promise etc.
 
-Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.
+  Also we ll compare these technologies between each others as well.
+</p>
 
-Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.
-
-Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.
+<p>
+     If you are reading this post right know, probably you know that '<b>I am a Rubyist.</b>'
+     So what does it mean the 'Rubyist'. As wiki definition Rubyist is 'A user of the Ruby programming language'.
+     In my opinion that's true but it is incomplete. It should be:
+     <b>'A user of the Ruby programming language who's using Ruby with love' <3.</b>
+</p>
+<p>
+    Of course we'll talk about the technologies or programming languages out of Ruby,
+    but maybe we can talk about Ruby a little bit more and further.
+</p>
+<p>
+    Also, don't worry if you see any amazing photo in any post :). Take a seat and <b>Enjoy!</b>
+</p>
