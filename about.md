@@ -4,22 +4,19 @@ title: About Long Haul
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About Long Haul</h1>
+	<h3 class="pageTitle">About Me!</h3>
 	<img src="{{ site.url }}/assets/img/touring.jpg" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
+	<p>I am Sadik Ay, senior of class Computer Engineering at Dumlupınar University in Turkey,
+	I have studied at Budapest University of Technology and Economics by student exchange programme for one semester.</p>
+	<p>I am working in a startup company and developing Ruby on Rails since August 2014.</p>
+	<h2>Which software technologies am I use?</h2>
 	<ul>
-		<li>Built with <a href="http://sass-lang.com/">SASS</a> + <a href="http://compass-style.org/">COMPASS</a></li>
-  		<li>Layout with <a href="http://susy.oddbird.net/">SUSY Grid</a></li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+		<li>I am using Ruby on Rails framework in the backend of my web projects.</li>
+		<li>In generally I works with <a href="http://www.postgresql.org/docs/8.4/static/intro-whatis.html">Postgresql</a>
+		 DB Management System</li>
+  		<li>I host projects on <a href="http://nginx.org/en/">nginx</a> server.</li>
+  		<li>Using Redis server to key-value store.</li>
+  		<li>VCS with Git (Gitflow)</li>
+  		<li>Github Issues, Redmine and Trello to manage the projects</li>
   	</ul>
 </div>
