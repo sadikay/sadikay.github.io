@@ -5,9 +5,10 @@ title: About Sadik Ay
 
 <div class="post">
 	<h3 class="pageTitle">About Me!</h3>
-	<img src="{{ site.url }}/assets/img/touring.jpg" alt="">
+	<img src="{{ site.url }}/assets/img/IMG_2048.jpg" alt="">
+	` Alright! Sometimes somethings went wrong. `
 	<p>I am Sadik Ay, student of senior class Computer Engineering at Dumlupınar University in Turkey,
-	I have studied at Budapest University of Technology and Economics by student exchange programme for one semester.</p>
+	I have studied at Budapest University of Technology and Economics by student exchange programme as well.</p>
 	<p>I am working in a startup company and developing Ruby on Rails since August 2014.</p>
 	<h4>Which software technologies am I use?</h4>
 	<ul>
