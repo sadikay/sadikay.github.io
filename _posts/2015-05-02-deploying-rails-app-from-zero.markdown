@@ -24,18 +24,18 @@ The next step is to choose your location. Choose one close to you so that you ca
 In the next step, we need to choose which OS to use. We ll choose Ubuntu 14.04-64 in this post.
 Optionally you can choose Ruby on Rails on 14.04 (Nginx + Unicorn) in 'Aplication' section.
 You can add your SSH-key into the droplet as optionally as well.
-<p><b>Adding SSH key to digitalocean</b></p>
-<i>If you already have an SSH key in digitalocean you can choose it and skip this step.</i>
+<p><b> Step 2 - Adding SSH key to digitalocean</b></p>
+<p><i>If you already have an SSH key in digitalocean you can choose it and skip this step.</i></p>
 <p>
-Open new terminal on your local PC and run `ssh-keygen` command. Make sure your public key has been saved in /home/youruser/.ssh/id_rsa.pub
+Open new terminal on your local PC and run <b>ssh-keygen</b> command. Make sure your public key has been saved in /home/youruser/.ssh/id_rsa.pub
 <br>
-Then run `cat .ssh/id_rsa.pub` and copy display of your command and paste it to digitalocean SSH key content.
+Then run <b>cat .ssh/id_rsa.pub</b> and copy display of your command and paste it to digitalocean SSH key content.
 </p>
 <p>
-<b>Step 2 - Adding new  user on Ubuntu Server</b>
+<b>Step 3 - Adding new  user on Ubuntu Server</b>
 </p>
-<p>Get your server IP from digitalocean panel and run `ssh root@[serverIP]` in your local terminal.</p>
-<p>So, you have connected to your droplet. Let's start to create new user on ypor server and install requirements.</p>
+<p>Get your server IP from digitalocean panel and run <b>ssh root@[serverIP]</b> in your local terminal.</p>
+<p>So, you have connected to your droplet. Let's start to create new user on your server and install requirements.</p>
 {% highlight ruby %}
 # adding new user
 adduser deployer
