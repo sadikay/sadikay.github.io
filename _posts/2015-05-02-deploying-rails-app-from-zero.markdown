@@ -32,7 +32,7 @@ Open new terminal on your local PC and run `ssh-keygen` command. Make sure your 
 Then run `cat .ssh/id_rsa.pub` and copy display of your command and paste it to digitalocean SSH key content.
 </p>
 <p>
-<b>Adding new  user on Ubuntu Server</b>
+<b>Step 2 - Adding new  user on Ubuntu Server</b>
 </p>
 <p>Get your server IP from digitalocean panel and run `ssh root@[serverIP]` in your local terminal.</p>
 <p>So, you have connected to your droplet. Let's start to create new user on ypor server and install requirements.</p>
@@ -52,7 +52,7 @@ cd
 # you are on new user path rigt now :)
 {% endhighlight %}
 
-<p><b>Step 2 - Creating SWAP area on your server</b></p>
+<p><b>Step 3 - Creating SWAP area on your server</b></p>
 <p>Tbundle exec jekyll servehis step is not necessary for each system. You can googling about SWAP area. If you decide to SWAP area
  is not necessary for your system. You can skip this step.</p>
 {% highlight ruby %}
