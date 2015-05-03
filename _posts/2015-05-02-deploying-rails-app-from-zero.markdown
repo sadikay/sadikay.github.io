@@ -12,11 +12,13 @@ So, I think for rails developers the most painful sections is: <b>Deploying</b> 
 <p>If you have an account on Digitaloceon, Login and create a droplet like in following way. In the case
   of you have not an account on Digitalocean you can Sign In by using my referral
   <a href="https://www.digitalocean.com/?refcode=02f16ab1f6a4">link.</a></p>
-<b>Step 1 - Creating new droplet on Digitalocean</b>
+<p>
+    <b>Step 1 - Creating new droplet on Digitalocean</b>
+</p>
 <p>Create your droplet as requirements of your application. For smaller applications it is enough
 to use 512 MB RAM - 20 GB SSD plan.</p>
-<img src="https://dl-web.dropbox.com/get/Herkese%20A%C3%A7%C4%B1k%20Klas%C3%B6r/droplet-size.png?_subject_uid=124692684&w=AACGiCMDOXC_ceSYJ4wPjLMYCk8g5rJ-MKwNHnn4QaPDLQ" >
-<br>
+<p><img src="https://dl-web.dropbox.com/get/Herkese%20A%C3%A7%C4%B1k%20Klas%C3%B6r/droplet-size.png?_subject_uid=124692684&w=AACGiCMDOXC_ceSYJ4wPjLMYCk8g5rJ-MKwNHnn4QaPDLQ" />
+</p>
 The next step is to choose your location. Choose one close to you so that you can have better connection speeds.
 <br>
 In the next step, we need to choose which OS to use. We ll choose Ubuntu 14.04-64 in this post.
