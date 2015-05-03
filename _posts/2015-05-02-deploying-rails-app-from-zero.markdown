@@ -53,7 +53,7 @@ cd
 {% endhighlight %}
 
 <p><b>Step 3 - Creating SWAP area on your server</b></p>
-<p>Tbundle exec jekyll servehis step is not necessary for each system. You can googling about SWAP area. If you decide to SWAP area
+<p>This step is not necessary for each system. You can googling about SWAP area. If you decide to SWAP area
  is not necessary for your system. You can skip this step.</p>
 {% highlight ruby %}
     sudo fallocate -l 4G /swapfile
