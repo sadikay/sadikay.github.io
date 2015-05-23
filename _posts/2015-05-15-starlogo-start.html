@@ -1,25 +1,28 @@
+---
+layout: post
+title:  "Starting to StarLogo"
+date:   2015-05-16
+description: "StarLogo
+is a programmable modeling environment for exploring the behaviors of
+decentralized systems, such as bird flocks, traffic jams, and ant colonies"
+---
 <tr>
+
     <td height="3159" colspan="2" valign="top">
         <table width="100%" border="0" cellspacing="3" cellpadding="0" height="102" align="center" mm_noconvert="TRUE">
             <tbody>
             <tr>
-                <td height="2" colspan="2" valign="top">
-                    <hr noshade="" align="center">
-                </td>
-            </tr>
-            <tr>
-                <td height="20" colspan="2" valign="top">
+                <td height="10" colspan="2" valign="top">
 
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="5" bordercolor="#009900"
                            rules="rows">
-
                         <tbody>
                         <tr bgcolor="#FFFFCC">
 
                             <td width="6">
                                 <div align="left"><img
                                         src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
+                                        width="6" height="5"></div>
                             </td>
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#006600"><a name="Introduction"></a>1.
@@ -36,68 +39,41 @@
             </tr>
             <tr align="right">
                 <td height="292" colspan="2" valign="top">
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
-                        is a programmable modeling environment for exploring the behaviors of
-                        decentralized systems, such as bird flocks, traffic jams, and ant colonies.
-                        It is designed especially for use by students. </font></p>
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">StarLogo, karınca kolonileri,
+                      kuş sürüleri gibi merkezi sistemi olmayan ortamların programlanmasında kullanılan bir modeldir.
+                         </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">In
-                        decentralized systems, orderly patterns can arise without centralized
-                        control. Increasingly, researchers are choosing decentralized models
-                        for the organizations and technologies that they construct in the world,
-                        and for the theories that they construct about the world. But many people
-                        continue to resist these ideas, assuming centralized control where none
-                        exists--for example, assuming (incorrectly) that bird flocks have leaders.
-                        StarLogo is designed to help students (as well as researchers) develop
-                        new ways of thinking about and understanding decentralized systems.
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Dağıtık (merkezi olmayan)
+                        sistemlerde, herhangi bir merkezi kontrol olmadan düzenli desenler ortaya çıkabilmektedir.
+                        Organizasyonlar ve teknolojik kurumlar tarafından, dağıtık sistemlerin tercih edilmesi
+                        günümüzde giderek artmaktadır.
+                        StarLogo Mitchel Resnick, Eric Klopfer ve diğer MIT Media Lab. üyeleri tarafınfan öğrencilere
+                        yönelik dağıtık sistemleri anlamaları ve yeni geliştirme yöntemleri bulmaları
+                        için tasarlanmıştır.
+
+                        <br><br>
+                        StarLogonun gelişmiş bir modeli olan StarLogo TNG 2008 yılında version 1.0 ile sürüldü.
+                        C ve Java ile yazılan TNG OpenGL grafiklerini kullanarak 3D boyutlu modellemeyi desteklemektedir.
+                        StarLogo'nun son versiyonu ise StarLogo Nova adıyla 2014 yazında release edildi. Nova browser simulasyon
+                        imkanı sağlamaktadır.
                     </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">StarLogo,
+                        Logo programlama dilinin bir eklentisidir. Logo dilinin kendi versiyonlarında,
+                        bilgisayar ekranından "turtle" komutu yardımıyla çizimler ve animasyonlar
+                        oluşturulabilmektedir. StarLogo kullanıcının binlerce "turtle" (kaplumbağa)
+                        grafiğini paralel bir şekilde kontrol etmesine olanak sağlamaktadır.
+                        </font></p>
 
-                        is an extension of the Logo programming language. With traditional versions
-
-                        of Logo, you can create drawings and animations by giving commands to
-
-                        a graphic "turtle" on the computer screen. StarLogo extends this idea
-
-                        by allowing you to control thousands of graphic turtles in parallel.
-
-                        In addition, StarLogo makes the turtles' world computationally active:
-
-                        you can write programs for thousands of "patches" that make up the turtles'
-
-                        environment. Turtles and patches can interact with one another. For
-
-                        example, you can program the turtles to "sniff" around the world, and
-
-                        change their behaviors based on what they sense in the patches below.
-
-                        StarLogo is particularly well-suited for modeling complex decentralized
-
-                        systems--systems which traditionally have not been available to people
-
-                        without advanced mathematical or programming skills. </font></p>
-
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
-
-                        document provides a short introduction to the Java version of StarLogo.
-
-                        It describes the basic features of StarLogo, and it suggests initial
-
-                        activities for using and learning StarLogo. At the end are pointers
-
-                        to other documents that provide a more complete description of the StarLogo
-
-                        language.</font></p>
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        Bu dökümanda StarLogo'nun Java versiyonuna değinerek, temel tanımları ele alacağız.
+                    </font>
+                    </p>
 
                     <hr noshade="" align="center">
-
                 </td>
-
             </tr>
-
             <tr>
-
                 <td height="25" colspan="2" valign="top">
 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
@@ -111,7 +87,6 @@
                                 <div align="left"><img
                                         src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
                                         width="6" height="25"></div>
-
                             </td>
 
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
@@ -140,7 +115,7 @@
 
                 <td height="70" colspan="2" valign="top">
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
 
                         includes three main types of "characters": <i><br>
 
@@ -234,7 +209,7 @@
 
                     <div align="left">
 
-                        <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                        <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><br>
 
                             The StarLogo interface consists of several main windows: <i><br>
 
@@ -310,7 +285,7 @@
 
                     </div>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Control
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Control
 
                         Center window</b></i><b>:</b> The Command Center area of the Control
 
@@ -375,9 +350,9 @@
 
                     </div>
 
-                    <p align="left"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i>Other
+                    <p align="left"><b><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><i>Other
 
-                        windows</i>:</font></b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        windows</i>:</font></b><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
 
                         The menu bar at the top of the Control Center window allows you to access
 
@@ -450,7 +425,7 @@
 
                 <td height="1196" colspan="2" valign="top">
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">This
 
                         section guides you through a sample session with StarLogo, showing you
 
@@ -460,19 +435,19 @@
 
                     </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">To
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">To
 
                         start a new project, choose New from the File menu of the Control Center.
 
                         Make sure you are in the Observer Command Center and type (pressing
 
-                        the return key after each command): </font><font size="2"><br>
+                        the return key after each command): </font><font size="3"><br>
 
                         <br>
 
                         <font face="Courier New, Courier, mono" color="#0066FF">crt 280</font></font>
 
-                        <font size="2"><br>
+                        <font size="3"><br>
 
                             <br>
 
@@ -486,7 +461,7 @@
 
                                 screen is actually a tall "pile" of turtles. </font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Next,
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Next,
 
                         switch to the Turtle Command Center and type the following commands
 
@@ -494,9 +469,9 @@
 
                         <br>
 
-                    </font><font size="2"><font face="Courier New, Courier, mono" color="#0066FF">fd
+                    </font><font size="3"><font face="Courier New, Courier, mono" color="#0066FF">fd
 
-                        15</font></font> <font size="2"><br>
+                        15</font></font> <font size="3"><br>
 
                         <br>
 
@@ -514,7 +489,7 @@
 
                         <font face="Courier New, Courier, mono" color="#0066FF">seth 0 fd 30</font></font>
 
-                        <font size="2"><br>
+                        <font size="3"><br>
 
                             <br>
 
@@ -530,7 +505,7 @@
 
                             <font face="Courier New, Courier, mono" color="#0066FF">pd fd 50</font></font>
 
-                        <font size="2"><br>
+                        <font size="3"><br>
 
                             <br>
 
@@ -556,15 +531,15 @@
 
                             </font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now,
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Now,
 
                         switch back to the Observer command center and type <br>
 
-                    </font><font size="2"><br>
+                    </font><font size="3"><br>
 
                         <font face="Courier New, Courier, mono" color="#0066FF">cg</font></font>
 
-                        <font size="2"><br>
+                        <font size="3"><br>
 
                             <br>
 
@@ -574,7 +549,7 @@
 
                             </font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">It
 
                         might be useful to have some buttons that allow you to control the "turtle
 
@@ -592,7 +567,7 @@
 
                         of the turtles move forward one step. </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">There
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">There
 
                         are two types of StarLogo buttons. You just created a <i>once-button</i>:
 
@@ -616,7 +591,7 @@
 
                         looping arrows indicate that the button is a forever-button. </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Click
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Click
 
                         on the <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>
 
@@ -640,7 +615,7 @@
 
                             1</font> forever-button. </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">You
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">You
 
                         might want to add some additional buttons. For example, make a new forever-button
 
@@ -659,7 +634,7 @@
 
                         the screen. </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">It
 
                         might be useful to add cg button so that you can easily clear the graphics.
 
@@ -682,13 +657,13 @@
 
                         to the Logo Instruction field.) </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">If
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">If
 
                         you plan to save the paintbrush project, it would be a good idea to
 
                         write a "setup" procedure so that you can recreate the paintbrush easily
 
-                        in the future. First, go to the Observer Procedures window. Type:</font><font size="2">
+                        in the future. First, go to the Observer Procedures window. Type:</font><font size="3">
 
                         <br>
 
@@ -702,7 +677,7 @@
 
                             end</font></font></p>
 
-                    <p align="left"><font size="2">T<font face="Verdana, Arial, Helvetica, sans-serif">his
+                    <p align="left"><font size="3">T<font face="Verdana, Arial, Helvetica, sans-serif">his
 
                         procedure adds a new word to the list of commands which the observer
 
@@ -723,7 +698,7 @@
 
                         to the observer. </font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Once
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Once
 
                         you've written the procedure, go back to the Interface area and make
 
@@ -731,39 +706,39 @@
 
                         click the setup button, StarLogo reinitializes the paintbrush. </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Here
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Here
 
-                        are some other things to try with the paintbrush project:</font><font size="2">
+                        are some other things to try with the paintbrush project:</font><font size="3">
 
                     </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Make
 
                         a slider called "turn", then change the<font face="Courier New, Courier, mono">
 
-                        </font></font><font face="Courier New, Courier, mono" size="2" color="#0066FF">rt
+                        </font></font><font face="Courier New, Courier, mono" size="3" color="#0066FF">rt
 
-                        5</font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">button
+                        5</font> <font face="Verdana, Arial, Helvetica, sans-serif" size="3">button
 
-                        to</font> <font face="Courier New, Courier, mono" size="2" color="#0066FF">rt
+                        to</font> <font face="Courier New, Courier, mono" size="3" color="#0066FF">rt
 
-                        turn</font><font face="Courier New, Courier, mono" size="2">. <font
+                        turn</font><font face="Courier New, Courier, mono" size="3">. <font
                             face="Verdana, Arial, Helvetica, sans-serif">With
 
                         the new slider, you can more interactively control the turning radius
 
                         of the turtles. </font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Add
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Add
 
                         buttons for changing the colors of the turtles. For example, create
 
-                        a forever-button with the instruction</font><font size="2"> <font
+                        a forever-button with the instruction</font><font size="3"> <font
                             face="Courier New, Courier, mono" color="#0066FF">setc
 
                         color + 1</font></font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Create
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Create
 
                         new procedures and buttons that allow you to shrink and expand the circle
 
@@ -771,7 +746,7 @@
 
                         to "remember" its original heading.) </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">If
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">If
 
                         you want to save the paintbrush project, select Save from the File menu
 
@@ -819,14 +794,14 @@
 
                 <td height="40" colspan="2" valign="top">
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Probably
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Probably
 
                         the best way to start learning about StarLogo is to play with some sample
 
                         projects. The sample-projects folder includes a diverse collection of
                         StarLogo projects. Try them! </font></p>
 
-                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Each
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Each
 
                         sample project comes with a set of procedures (some combination of turtle
 
