@@ -18,20 +18,9 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
                            rules="rows">
                         <tbody>
                         <tr bgcolor="#FFFFCC">
-
-                            <td width="6">
-                                <div align="left"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="5"></div>
-                            </td>
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#006600"><a name="Introduction"></a>1.
                                 Introduction</font></b></font></td>
-                            <td width="6">
-                                <div align="right"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -50,20 +39,17 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
                         StarLogo Mitchel Resnick, Eric Klopfer ve diğer MIT Media Lab. üyeleri tarafınfan öğrencilere
                         yönelik dağıtık sistemleri anlamaları ve yeni geliştirme yöntemleri bulmaları
                         için tasarlanmıştır.
-
+                        <br><br>
+                            StarLogo, Logo programlama dilinin bir eklentisidir. Logo dilinin kendi versiyonlarında,
+                            bilgisayar ekranından "turtle" komutu yardımıyla çizimler ve animasyonlar
+                            oluşturulabilmektedir. StarLogo kullanıcının binlerce "turtle" (kaplumbağa)
+                            grafiğini paralel bir şekilde kontrol etmesine olanak sağlamaktadır.
                         <br><br>
                         StarLogonun gelişmiş bir modeli olan StarLogo TNG 2008 yılında version 1.0 ile sürüldü.
                         C ve Java ile yazılan TNG OpenGL grafiklerini kullanarak 3D boyutlu modellemeyi desteklemektedir.
                         StarLogo'nun son versiyonu ise StarLogo Nova adıyla 2014 yazında release edildi. Nova browser simulasyon
                         imkanı sağlamaktadır.
                     </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">StarLogo,
-                        Logo programlama dilinin bir eklentisidir. Logo dilinin kendi versiyonlarında,
-                        bilgisayar ekranından "turtle" komutu yardımıyla çizimler ve animasyonlar
-                        oluşturulabilmektedir. StarLogo kullanıcının binlerce "turtle" (kaplumbağa)
-                        grafiğini paralel bir şekilde kontrol etmesine olanak sağlamaktadır.
-                        </font></p>
 
                     <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
                         Bu dökümanda StarLogo'nun Java versiyonuna değinerek, temel tanımları ele alacağız.
@@ -81,229 +67,78 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
 
                         <tbody>
                         <tr bgcolor="#FFFFCC">
-
-                            <td width="6">
-
-                                <div align="left"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-                            </td>
-
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#000000"><a name="CastofCharacters"></a><font color="#006600">2.
 
                                 Cast of Characters</font></font></b></font></td>
-
-                            <td width="6">
-
-                                <div align="right"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                         </tr>
-
                         </tbody>
                     </table>
-
                 </td>
-
             </tr>
-
             <tr align="right">
-
                 <td height="70" colspan="2" valign="top">
-
                     <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
-
-                        includes three main types of "characters": <i><br>
-
-                            <br>
-
-                            Turtles</i>. The main inhabitants of the StarLogo world are graphic
-
-                        creatures known as "turtles." You can use a turtle to represent almost
-
-                        any type of object: an ant in a colony, a car in a traffic jam, an antibody
-
-                        in an immune system, a molecule in a gas. Each turtle has a position,
-
-                        a heading, a color, and a "pen" for drawing. You can add more specialized
-
-                        traits and properties. In StarLogo (unlike traditional versions of Logo),
-
-                        you can control the actions and interactions of <i>thousands</i> of
-
-                        turtles in parallel. <i><br>
-
-                            <br>
-
-                            Patches</i>. Patches are pieces of the world in which the turtles live.
-
-                        Patches are not merely passive objects upon which the turtles act. Like
-
-                        turtles, patches can execute StarLogo commands, and they can act on
-
-                        turtles and patches. Patches are arranged in a grid, with each patch
-
-                        corresponding to a square in the Graphics area. <i><br>
-
-                            <br>
-
-                            Observer</i>. The observer "looks down" on the turtles and patches from
-
-                        a bird's eye perspective. The observer can create new turtles, and it
-
-                        can monitor the activity of the existing turtles and patches. </font></p>
+                        üç ana karakter tipi içermektedir.<br><br>
+                        <b><i>Turtles:</i></b> StarLogo dünyasını oluşturan ana karakterlerin başında "turtles" lar
+                        gelmektedir. "turtle" nesnesini diğer nesneleri ifade etmek için de kullanabiliriz.
+                        Örneğin: Kolonideki bir karınca, trafik sistemindeki bir araba ve bağışıklık sistemindeki bir antikoru
+                        "turtle" objesi temsil etmektedir.
+                        <br>
+                        Her bir turtle nin bir pozisyonu, başlığı, rengi ve çizimi bulunmaktadır.
+                        <br>
+                        <br>
+                       <b><i>Patches:</i></b> "turtle" lerin yaşadıkları yerler olarak tanımlanabilir.
+                            Patches 'lar turtle lar gibi StarLogo komutları ile çalıştırılabilir,
+                        'turtle' ve diğer patches'lara etki ederler. Her 'patche' kareli bir
+                        grafik alanında bir kareye karşılık gelecek şekilde düzenlenmiştir. <i><br><br>
+                            <b>Observer (Gözlemci):</b></i> Observer ile kuş bakışı perspektifinden 'turtle' ve 'patch' ler
+                        gözlemlenebilir. Observer yeni 'turtle' lar oluşturabilir veya mevcut turtlelerin aktivitelerini ve
+                    patchlerini izleyebilir.</font></p>
 
                     <hr noshade="" align="center">
-
                 </td>
-
             </tr>
-
             <tr>
-
                 <td height="25" colspan="2" valign="top">
-
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
                            rules="rows">
-
                         <tbody>
                         <tr bgcolor="#FFFFCC">
-
-                            <td width="6">
-
-                                <div align="left"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#000000"><a name="StarLogoInterface"></a><font color="#006600">3.
-
                                 StarLogo Interface</font></font></b></font></td>
-
-                            <td width="6">
-
-                                <div align="right"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                         </tr>
-
                         </tbody>
                     </table>
-
                 </td>
-
             </tr>
-
             <tr align="right">
 
                 <td height="878" colspan="2" valign="top">
-
                     <div align="left">
-
-                        <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><br>
-
-                            The StarLogo interface consists of several main windows: <i><br>
-
-                                <br>
-
-                                <b>StarLogo window</b></i><b>:</b> This window is divided into several
-
-                            sections. The initially black Graphics area is where the StarLogo
-
-                            turtles move and draw. The turtles move on top of a grid of patches.
-
-                            When a turtle moves off the screen, it "wraps" around to the other
-
-                            side. You can move a turtle directly by dragging it with the mouse.
-
-                            The white area on the left of the Graphics area is the Interface area.
-
-                            This area is where you will create buttons, sliders, and monitors
-
-                            that allow you to interact directly with StarLogo programs. To create
-
-                            and inspect interface objects (that is, buttons, sliders, and monitors),
-
-                            use the Main Toolbar, located in the gray bar across the top of the
-
-                            StarLogo window. To create a new interface object, choose the appropriate
-
-                            tool from the Toolbar and drag out a rectangle in the Interface area.
-
-                            To inspect the underlying behavior of an existing interface object,
-
-                            choose the appropriate tool from the Toolbar and then click on the
-
-                            object. (You can also inspect an object by holding down control and
-
-                            double-clicking on the object with the standard arrow tool.) The Paint
-
-                            and Color Toolbar appears above the Graphics area when you click the
-
-                            paintbrush icon from the Main Toolbar. From here, you can select which
-
-                            color you want to draw with. In addition, you can select different
-
-                            types of drawing tools.</font></p>
-
+                        <font size="3" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                           <p> StarLogo programının arayüzü birden fazla ana pencere barındırmaktadır: <br>
+                            <i><b>StarLogo window</b></i><b>:</b></p>
                         <table width="100%" border="0" cellspacing="10" cellpadding="0" height="37">
-
                             <tbody>
                             <tr>
-
                                 <td align="center"><img
                                         src="http://education.mit.edu/starlogo/gettingstarted/images/ss_starlogo.gif"
                                         width="749" height="541" border="2"></td>
-
                             </tr>
-
                             <tr>
-
                                 <td height="8">
-
                                     <h5 align="center"><font face="Verdana, Arial, Helvetica, sans-serif"
-                                                             color="#006600">FIGURE
-
-                                        1: Starlogo Window</font></h5>
-
+                                                             color="#006600">FIGURE1: Starlogo Window</font></h5>
                                 </td>
-
                             </tr>
-
                             </tbody>
                         </table>
-
-
                     </div>
 
                     <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Control
-
-                        Center window</b></i><b>:</b> The Command Center area of the Control
-
-                        Center window is where you type commands for StarLogo. You may run a
-
-                        command again by moving the cursor to that line and pressing return.
-
-                        The Procedures area is where you write your own StarLogo procedures.
-
-                        By clicking back and forth between "Turtle" and "Observer" you can distinguish
-
-                        between those commands which are specific to turtles and those which
-
-                        can only be executed by the observer. Refer to the Reference Manual
-
-                        for a more complete description of the different command types available
-
-                        to each StarLogo character. </font></p>
+                        Center window</b></i><b>:</b>Programın çalıştıracağı komutların girişi buradan yapılır. </font></p>
 
                     <div align="left">
 
@@ -311,7 +146,6 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
 
                             <tbody>
                             <tr>
-
                                 <td height="403" align="center" width="50%"><img
                                         src="http://education.mit.edu/starlogo/gettingstarted/images/turtlecom.gif"
                                         width="285" height="500" border="2"></td>
@@ -319,64 +153,32 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
                                 <td height="403" align="center" width="50%"><img
                                         src="http://education.mit.edu/starlogo/gettingstarted/images/observcom.gif"
                                         width="285" height="500" border="2"></td>
-
                             </tr>
-
                             <tr>
-
                                 <td height="20" align="center" width="50%">
-
                                     <h5><font face="Verdana, Arial, Helvetica, sans-serif" color="#006600">FIGURE
-
                                         2: The Turtle Command Center</font><font
                                             face="Verdana, Arial, Helvetica, sans-serif">
-
                                     </font></h5>
-
                                 </td>
-
                                 <td height="20" align="center" width="50%">
-
                                     <h5><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#006600">FIGURE
-
                                         3: The Observer Command Center </font></font></h5>
-
                                 </td>
-
                             </tr>
-
                             </tbody>
                         </table>
-
                     </div>
+                    <p align="left"><b><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><i>Diğer
 
-                    <p align="left"><b><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><i>Other
+                        Pencereler</i>:</font></b><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
 
-                        windows</i>:</font></b><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        Control Center Window 'un üst tarafındaki menü bar bir kaç windowa daha erişebilmemizi sağlamaktadır.
 
-                        The menu bar at the top of the Control Center window allows you to access
-
-                        several other windows. The Information window is intended for explanatory
-
-                        notes, commentary, and instructions. The Output window is used for printing
-
-                        and recording data generated by a StarLogo project. The print command
-
-                        prints to this window. The Plot window is where you can create real-time
-
-                        graphs as your StarLogo project is running. <i><br>
-
-                        <br>
-
-                        <b>Turtle and Patch Monitors</b></i><b>:</b> If you double-click on a turtle or patch in the
-                        Graphics area, a Turtle Monitor or Patch Monitor will appear, showing the turtle or patch's
-                        variables, both standard and user-defined, and their values. The values update in real-time as
-                        your StarLogo project is running. You can also use the Turtle or Patch Monitor to directly
-                        change the value (state) of the variable by entering a value and hitting Enter/Return.</font>
-                    </p>
+                        Bilgi penceresi programla ilgili açıklamalar yazmamızı sağlar.
+                        <i><br><br>
 
                     <hr noshade="" align="left">
-
                 </td>
 
             </tr>
@@ -390,51 +192,20 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
 
                         <tbody>
                         <tr bgcolor="#FFFFCC">
-
-                            <td width="6">
-
-                                <div align="left"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#000000"><a name="CreatingOwnProject"></a><font color="#006600">4.
 
                                 Creating Your Own Project</font></font></b></font></td>
-
-                            <td width="6">
-
-                                <div align="right"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                         </tr>
-
                         </tbody>
                     </table>
-
                 </td>
-
             </tr>
-
             <tr bgcolor="#FFFFFF" align="right">
-
                 <td height="1196" colspan="2" valign="top">
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">This
-
-                        section guides you through a sample session with StarLogo, showing you
-
-                        how to create a new StarLogo project. As an example, it describes how
-
-                        to create a "paintbrush" consisting of several hundred StarLogo turtles.
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Hadi bir örnek üzerinde
+                        kendi projemizi oluşturmaya çalışalım.
                     </font></p>
-
                     <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">To
 
                         start a new project, choose New from the File menu of the Control Center.
@@ -767,29 +538,14 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
 
                         <tbody>
                         <tr bgcolor="#FFFFCC">
-
-                            <td width="6">
-
-                                <div align="left"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-
-                            </td>
-
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
                                     color="#000000"><a name="SampleProjects"></a><font color="#006600">5.
                                 Sample Projects</font></font></b></font></td>
-                            <td width="6">
-                                <div align="right"><img
-                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
-                                        width="6" height="25"></div>
-                            </td>
                         </tr>
                         </tbody>
                     </table>
                 </td>
             </tr>
-
             <tr bgcolor="#FFFFFF" align="right">
 
                 <td height="40" colspan="2" valign="top">
