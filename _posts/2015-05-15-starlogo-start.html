@@ -1,0 +1,846 @@
+<tr>
+    <td height="3159" colspan="2" valign="top">
+        <table width="100%" border="0" cellspacing="3" cellpadding="0" height="102" align="center" mm_noconvert="TRUE">
+            <tbody>
+            <tr>
+                <td height="2" colspan="2" valign="top">
+                    <hr noshade="" align="center">
+                </td>
+            </tr>
+            <tr>
+                <td height="20" colspan="2" valign="top">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                           rules="rows">
+
+                        <tbody>
+                        <tr bgcolor="#FFFFCC">
+
+                            <td width="6">
+                                <div align="left"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+                            </td>
+                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
+                                    color="#006600"><a name="Introduction"></a>1.
+                                Introduction</font></b></font></td>
+                            <td width="6">
+                                <div align="right"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr align="right">
+                <td height="292" colspan="2" valign="top">
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
+                        is a programmable modeling environment for exploring the behaviors of
+                        decentralized systems, such as bird flocks, traffic jams, and ant colonies.
+                        It is designed especially for use by students. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">In
+                        decentralized systems, orderly patterns can arise without centralized
+                        control. Increasingly, researchers are choosing decentralized models
+                        for the organizations and technologies that they construct in the world,
+                        and for the theories that they construct about the world. But many people
+                        continue to resist these ideas, assuming centralized control where none
+                        exists--for example, assuming (incorrectly) that bird flocks have leaders.
+                        StarLogo is designed to help students (as well as researchers) develop
+                        new ways of thinking about and understanding decentralized systems.
+                    </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
+
+                        is an extension of the Logo programming language. With traditional versions
+
+                        of Logo, you can create drawings and animations by giving commands to
+
+                        a graphic "turtle" on the computer screen. StarLogo extends this idea
+
+                        by allowing you to control thousands of graphic turtles in parallel.
+
+                        In addition, StarLogo makes the turtles' world computationally active:
+
+                        you can write programs for thousands of "patches" that make up the turtles'
+
+                        environment. Turtles and patches can interact with one another. For
+
+                        example, you can program the turtles to "sniff" around the world, and
+
+                        change their behaviors based on what they sense in the patches below.
+
+                        StarLogo is particularly well-suited for modeling complex decentralized
+
+                        systems--systems which traditionally have not been available to people
+
+                        without advanced mathematical or programming skills. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+
+                        document provides a short introduction to the Java version of StarLogo.
+
+                        It describes the basic features of StarLogo, and it suggests initial
+
+                        activities for using and learning StarLogo. At the end are pointers
+
+                        to other documents that provide a more complete description of the StarLogo
+
+                        language.</font></p>
+
+                    <hr noshade="" align="center">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td height="25" colspan="2" valign="top">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                           rules="rows">
+
+                        <tbody>
+                        <tr bgcolor="#FFFFCC">
+
+                            <td width="6">
+
+                                <div align="left"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
+                                    color="#000000"><a name="CastofCharacters"></a><font color="#006600">2.
+
+                                Cast of Characters</font></font></b></font></td>
+
+                            <td width="6">
+
+                                <div align="right"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+
+            </tr>
+
+            <tr align="right">
+
+                <td height="70" colspan="2" valign="top">
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">StarLogo
+
+                        includes three main types of "characters": <i><br>
+
+                            <br>
+
+                            Turtles</i>. The main inhabitants of the StarLogo world are graphic
+
+                        creatures known as "turtles." You can use a turtle to represent almost
+
+                        any type of object: an ant in a colony, a car in a traffic jam, an antibody
+
+                        in an immune system, a molecule in a gas. Each turtle has a position,
+
+                        a heading, a color, and a "pen" for drawing. You can add more specialized
+
+                        traits and properties. In StarLogo (unlike traditional versions of Logo),
+
+                        you can control the actions and interactions of <i>thousands</i> of
+
+                        turtles in parallel. <i><br>
+
+                            <br>
+
+                            Patches</i>. Patches are pieces of the world in which the turtles live.
+
+                        Patches are not merely passive objects upon which the turtles act. Like
+
+                        turtles, patches can execute StarLogo commands, and they can act on
+
+                        turtles and patches. Patches are arranged in a grid, with each patch
+
+                        corresponding to a square in the Graphics area. <i><br>
+
+                            <br>
+
+                            Observer</i>. The observer "looks down" on the turtles and patches from
+
+                        a bird's eye perspective. The observer can create new turtles, and it
+
+                        can monitor the activity of the existing turtles and patches. </font></p>
+
+                    <hr noshade="" align="center">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td height="25" colspan="2" valign="top">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                           rules="rows">
+
+                        <tbody>
+                        <tr bgcolor="#FFFFCC">
+
+                            <td width="6">
+
+                                <div align="left"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
+                                    color="#000000"><a name="StarLogoInterface"></a><font color="#006600">3.
+
+                                StarLogo Interface</font></font></b></font></td>
+
+                            <td width="6">
+
+                                <div align="right"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+
+            </tr>
+
+            <tr align="right">
+
+                <td height="878" colspan="2" valign="top">
+
+                    <div align="left">
+
+                        <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+
+                            The StarLogo interface consists of several main windows: <i><br>
+
+                                <br>
+
+                                <b>StarLogo window</b></i><b>:</b> This window is divided into several
+
+                            sections. The initially black Graphics area is where the StarLogo
+
+                            turtles move and draw. The turtles move on top of a grid of patches.
+
+                            When a turtle moves off the screen, it "wraps" around to the other
+
+                            side. You can move a turtle directly by dragging it with the mouse.
+
+                            The white area on the left of the Graphics area is the Interface area.
+
+                            This area is where you will create buttons, sliders, and monitors
+
+                            that allow you to interact directly with StarLogo programs. To create
+
+                            and inspect interface objects (that is, buttons, sliders, and monitors),
+
+                            use the Main Toolbar, located in the gray bar across the top of the
+
+                            StarLogo window. To create a new interface object, choose the appropriate
+
+                            tool from the Toolbar and drag out a rectangle in the Interface area.
+
+                            To inspect the underlying behavior of an existing interface object,
+
+                            choose the appropriate tool from the Toolbar and then click on the
+
+                            object. (You can also inspect an object by holding down control and
+
+                            double-clicking on the object with the standard arrow tool.) The Paint
+
+                            and Color Toolbar appears above the Graphics area when you click the
+
+                            paintbrush icon from the Main Toolbar. From here, you can select which
+
+                            color you want to draw with. In addition, you can select different
+
+                            types of drawing tools.</font></p>
+
+                        <table width="100%" border="0" cellspacing="10" cellpadding="0" height="37">
+
+                            <tbody>
+                            <tr>
+
+                                <td align="center"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/ss_starlogo.gif"
+                                        width="749" height="541" border="2"></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td height="8">
+
+                                    <h5 align="center"><font face="Verdana, Arial, Helvetica, sans-serif"
+                                                             color="#006600">FIGURE
+
+                                        1: Starlogo Window</font></h5>
+
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Control
+
+                        Center window</b></i><b>:</b> The Command Center area of the Control
+
+                        Center window is where you type commands for StarLogo. You may run a
+
+                        command again by moving the cursor to that line and pressing return.
+
+                        The Procedures area is where you write your own StarLogo procedures.
+
+                        By clicking back and forth between "Turtle" and "Observer" you can distinguish
+
+                        between those commands which are specific to turtles and those which
+
+                        can only be executed by the observer. Refer to the Reference Manual
+
+                        for a more complete description of the different command types available
+
+                        to each StarLogo character. </font></p>
+
+                    <div align="left">
+
+                        <table width="100%" border="0" cellspacing="10" cellpadding="0" height="420">
+
+                            <tbody>
+                            <tr>
+
+                                <td height="403" align="center" width="50%"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/turtlecom.gif"
+                                        width="285" height="500" border="2"></td>
+
+                                <td height="403" align="center" width="50%"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/observcom.gif"
+                                        width="285" height="500" border="2"></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td height="20" align="center" width="50%">
+
+                                    <h5><font face="Verdana, Arial, Helvetica, sans-serif" color="#006600">FIGURE
+
+                                        2: The Turtle Command Center</font><font
+                                            face="Verdana, Arial, Helvetica, sans-serif">
+
+                                    </font></h5>
+
+                                </td>
+
+                                <td height="20" align="center" width="50%">
+
+                                    <h5><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#006600">FIGURE
+
+                                        3: The Observer Command Center </font></font></h5>
+
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <p align="left"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i>Other
+
+                        windows</i>:</font></b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+
+                        The menu bar at the top of the Control Center window allows you to access
+
+                        several other windows. The Information window is intended for explanatory
+
+                        notes, commentary, and instructions. The Output window is used for printing
+
+                        and recording data generated by a StarLogo project. The print command
+
+                        prints to this window. The Plot window is where you can create real-time
+
+                        graphs as your StarLogo project is running. <i><br>
+
+                        <br>
+
+                        <b>Turtle and Patch Monitors</b></i><b>:</b> If you double-click on a turtle or patch in the
+                        Graphics area, a Turtle Monitor or Patch Monitor will appear, showing the turtle or patch's
+                        variables, both standard and user-defined, and their values. The values update in real-time as
+                        your StarLogo project is running. You can also use the Turtle or Patch Monitor to directly
+                        change the value (state) of the variable by entering a value and hitting Enter/Return.</font>
+                    </p>
+
+                    <hr noshade="" align="left">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td height="25" colspan="2" valign="top">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                           rules="rows">
+
+                        <tbody>
+                        <tr bgcolor="#FFFFCC">
+
+                            <td width="6">
+
+                                <div align="left"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
+                                    color="#000000"><a name="CreatingOwnProject"></a><font color="#006600">4.
+
+                                Creating Your Own Project</font></font></b></font></td>
+
+                            <td width="6">
+
+                                <div align="right"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+
+            </tr>
+
+            <tr bgcolor="#FFFFFF" align="right">
+
+                <td height="1196" colspan="2" valign="top">
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+
+                        section guides you through a sample session with StarLogo, showing you
+
+                        how to create a new StarLogo project. As an example, it describes how
+
+                        to create a "paintbrush" consisting of several hundred StarLogo turtles.
+
+                    </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">To
+
+                        start a new project, choose New from the File menu of the Control Center.
+
+                        Make sure you are in the Observer Command Center and type (pressing
+
+                        the return key after each command): </font><font size="2"><br>
+
+                        <br>
+
+                        <font face="Courier New, Courier, mono" color="#0066FF">crt 280</font></font>
+
+                        <font size="2"><br>
+
+                            <br>
+
+                            <font face="Verdana, Arial, Helvetica, sans-serif">StarLogo creates
+
+                                280 turtles (<font face="Courier New, Courier, mono" color="#0066FF">crt</font>
+
+                                stands for create-turtles). By default, the turtles start at position
+
+                                (0, 0), in the middle of the screen. The "dot" in the middle of the
+
+                                screen is actually a tall "pile" of turtles. </font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Next,
+
+                        switch to the Turtle Command Center and type the following commands
+
+                        (pressing return after each command): <br>
+
+                        <br>
+
+                    </font><font size="2"><font face="Courier New, Courier, mono" color="#0066FF">fd
+
+                        15</font></font> <font size="2"><br>
+
+                        <br>
+
+                        <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle moves
+
+                            forward 15 steps. When new turtles are created, their headings are "spaced
+
+                            out" from one another, so the new turtles move in different directions.
+
+                            In this case, the turtles form a circle of radius 15 around the point
+
+                            (0, 0). </font><br>
+
+                        <br>
+
+                        <font face="Courier New, Courier, mono" color="#0066FF">seth 0 fd 30</font></font>
+
+                        <font size="2"><br>
+
+                            <br>
+
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle sets
+
+                                its heading to 0 (north, the top of the screen), then moves forward
+
+                                30 steps. Since all turtles are headed in the same direction, the circle
+
+                                moves as a unit. <br>
+
+                            </font><br>
+
+                            <font face="Courier New, Courier, mono" color="#0066FF">pd fd 50</font></font>
+
+                        <font size="2"><br>
+
+                            <br>
+
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle puts
+
+                                its "pen down" (<font color="#0066FF" face="Courier New, Courier, mono">pd</font>),
+
+                                then moves forward 50 steps. Each turtle draws in its own color. Note
+
+                                that the turtles "wrap" when they reach the edge of the screen. <br>
+
+                            </font><br>
+
+                            <font face="Courier New, Courier, mono" color="#0066FF">repeat 36 [fd
+
+                                2 rt 10]</font><br>
+
+                            <br>
+
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle draws
+
+                                a circle, repeatedly moving forward 2 steps and turning right 10 degrees.
+
+                            </font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now,
+
+                        switch back to the Observer command center and type <br>
+
+                    </font><font size="2"><br>
+
+                        <font face="Courier New, Courier, mono" color="#0066FF">cg</font></font>
+
+                        <font size="2"><br>
+
+                            <br>
+
+                            <font face="Verdana, Arial, Helvetica, sans-serif">This clears the graphics,
+
+                                turning all of the patches to black (but not affecting the turtles).
+
+                            </font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It
+
+                        might be useful to have some buttons that allow you to control the "turtle
+
+                        paintbrush" interactively. To create a new button, select the button
+
+                        tool from the Main Toolbar, then click in the Interface area and "drag
+
+                        out" a rectangle. A dialog box appears. In the Logo Instruction field,
+
+                        type <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>.
+
+                        Be sure that the "Turtle" and not the "Observer" item is checked. Then
+
+                        click OK. Your new button appears. Whenever you click the button, all
+
+                        of the turtles move forward one step. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">There
+
+                        are two types of StarLogo buttons. You just created a <i>once-button</i>:
+
+                        when you click the button, it executes its instruction once. Let's change
+
+                        the <font color="#0066FF" face="Courier New, Courier, mono">fd 1</font>
+
+                        button to the other type of button: a <i>forever-button</i>. Select
+
+                        the <font color="#0066FF" face="Courier New, Courier, mono">fd 1</font>
+
+                        button (by control-clicking on it, or by dragging a rectangle around
+
+                        the button). Then double-click on the selected button. The button's
+
+                        dialog box reappears. (You can also get the button's dialog box by single-clicking
+
+                        on the button with the button tool.) Check the forever box, then click
+
+                        OK. Notice the looping pair of arrows on the face of the button. These
+
+                        looping arrows indicate that the button is a forever-button. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Click
+
+                        on the <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>
+
+                        button. The turtles execute the<font color="#0066FF" face="Courier New, Courier, mono">
+
+                            fd 1</font> instruction again and again, so the circle keeps moving
+
+                        forward. Forever-buttons run in the "background": you can execute other
+
+                        instructions in the command center while forever-buttons are running.
+
+                        Try typing <font face="Courier New, Courier, mono" color="#0066FF">rt
+
+                            45</font> in the Turtle Command Center. The circle of turtles veers
+
+                        to the right. Switch to the Observer command center and type cg: the
+
+                        graphics clear but the turtles continue to draw. To stop the turtles,
+
+                        click on the <font color="#0066FF" face="Courier New, Courier, mono">fd
+
+                            1</font> forever-button. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">You
+
+                        might want to add some additional buttons. For example, make a new forever-button
+
+                        with the instruction <font face="Courier New, Courier, mono" color="#0066FF">rt
+
+                            5</font>. Click on both the <font face="Courier New, Courier, mono" color="#0066FF">fd
+
+                            1</font> button and the <font face="Courier New, Courier, mono" color="#0066FF">rt
+
+                            5</font> button. (StarLogo allows forever buttons to run in parallel.)
+
+                        The turtles all draw circles. By clicking the <font face="Courier New, Courier, mono"
+                                                                            color="#0066FF">rt
+
+                            5</font> button on and off selectively, you can move the turtles around
+
+                        the screen. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It
+
+                        might be useful to add cg button so that you can easily clear the graphics.
+
+                        The <font color="#0066FF" face="Courier New, Courier, mono">cg</font>
+
+                        button should be once-button, not a forever-button, since you don�t
+
+                        want StarLogo to continue clearing the graphics repeatedly. In addition,
+
+                        since cg is an observer command, you should be sure to check "Observer"
+
+                        next to the Logo Instruction field when creating your button. You might
+
+                        also want to add once-buttons to lift up the turtles' pens (<font color="#0066FF"
+                                                                                          face="Courier New, Courier, mono">pu</font>)
+
+                        and to put the pens down (<font color="#0066FF" face="Courier New, Courier, mono">pd</font>).
+
+                        (Pen up and pen down are both turtle commands, so check "Turtle" next
+
+                        to the Logo Instruction field.) </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">If
+
+                        you plan to save the paintbrush project, it would be a good idea to
+
+                        write a "setup" procedure so that you can recreate the paintbrush easily
+
+                        in the future. First, go to the Observer Procedures window. Type:</font><font size="2">
+
+                        <br>
+
+                        <br>
+
+                        <font face="Courier New, Courier, mono" color="#0066FF">to setup <br>
+
+                            ca crt 280 <br>
+
+                            ask-turtles [fd 15 seth 0 pd] <br>
+
+                            end</font></font></p>
+
+                    <p align="left"><font size="2">T<font face="Verdana, Arial, Helvetica, sans-serif">his
+
+                        procedure adds a new word to the list of commands which the observer
+
+                        knows. First, the observer clears the Graphics area (<font face="Courier New, Courier, mono"
+                                                                                   color="#0066FF">ca</font>
+
+                        stands for clear all). Then, the observer creates 280 turtles. Next,
+
+                        the observer asks the turtles to perform the commands listed inside
+
+                        the square brackets []. The ask-turtles command in effect transfers
+
+                        control from the observer to the turtles--just like when you switch
+
+                        from the Observer Command Center to the Turtle Command Center and back.
+
+                        After the square brackets are closed, the procedure returns control
+
+                        to the observer. </font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Once
+
+                        you've written the procedure, go back to the Interface area and make
+
+                        a once-button whose Logo Instruction is the command setup. When you
+
+                        click the setup button, StarLogo reinitializes the paintbrush. </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Here
+
+                        are some other things to try with the paintbrush project:</font><font size="2">
+
+                    </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make
+
+                        a slider called "turn", then change the<font face="Courier New, Courier, mono">
+
+                        </font></font><font face="Courier New, Courier, mono" size="2" color="#0066FF">rt
+
+                        5</font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">button
+
+                        to</font> <font face="Courier New, Courier, mono" size="2" color="#0066FF">rt
+
+                        turn</font><font face="Courier New, Courier, mono" size="2">. <font
+                            face="Verdana, Arial, Helvetica, sans-serif">With
+
+                        the new slider, you can more interactively control the turning radius
+
+                        of the turtles. </font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Add
+
+                        buttons for changing the colors of the turtles. For example, create
+
+                        a forever-button with the instruction</font><font size="2"> <font
+                            face="Courier New, Courier, mono" color="#0066FF">setc
+
+                        color + 1</font></font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Create
+
+                        new procedures and buttons that allow you to shrink and expand the circle
+
+                        as it moves. (Warning: This is not trivial! Hint: Each turtle needs
+
+                        to "remember" its original heading.) </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">If
+
+                        you want to save the paintbrush project, select Save from the File menu
+
+                        in the Control Center menu bar. </font></p>
+
+                    <hr noshade="" align="left">
+
+                </td>
+
+            </tr>
+
+            <tr bgcolor="#FFFFFF">
+
+                <td height="25" colspan="2" valign="top">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
+                           rules="rows">
+
+                        <tbody>
+                        <tr bgcolor="#FFFFCC">
+
+                            <td width="6">
+
+                                <div align="left"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+
+                            </td>
+
+                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
+                                    color="#000000"><a name="SampleProjects"></a><font color="#006600">5.
+                                Sample Projects</font></font></b></font></td>
+                            <td width="6">
+                                <div align="right"><img
+                                        src="http://education.mit.edu/starlogo/gettingstarted/images/EndBar.gif"
+                                        width="6" height="25"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFFFFF" align="right">
+
+                <td height="40" colspan="2" valign="top">
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Probably
+
+                        the best way to start learning about StarLogo is to play with some sample
+
+                        projects. The sample-projects folder includes a diverse collection of
+                        StarLogo projects. Try them! </font></p>
+
+                    <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Each
+
+                        sample project comes with a set of procedures (some combination of turtle
+
+                        procedures and observer procedures), a set of interface objects such
+
+                        as buttons and sliders (in the Interface area), and a set of explanatory
+
+                        notes (in the Information window, accessible through the Control Center
+
+                        menu bar). </font></p>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
