@@ -1,0 +1,1823 @@
+<html>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+
+  <tbody><tr>
+
+    <td height="181" valign="top">
+
+  <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" height="181" mm_noconvert="TRUE">
+
+    <tbody><tr bgcolor="#99CCCC">
+
+      <td height="43" align="center" bgcolor="#6699CC">
+
+        <h1 align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF">&nbsp;StarLogo
+
+          Tutorial</font></h1>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF">
+
+      <td height="2" align="center">
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td height="106" valign="right" align="center"><img src="http://education.mit.edu/starlogo/tutorial/images/termite.2.gif" width="100" height="100" border="2"></td>
+
+    </tr>
+
+  </tbody></table>
+
+</td>
+
+    <td width="1" height="181" valign="top"></td>
+
+  </tr>
+
+  <tr>
+
+    <td width="100%" height="7995" colspan="2" valign="top">
+
+      <table width="100%" border="0" cellspacing="3" cellpadding="1" height="102" align="left" mm_noconvert="TRUE">
+        <tbody><tr>
+
+          <td height="2" colspan="2" valign="top" width="100%">
+            <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td height="2" colspan="2" valign="top" width="100%">
+
+            <h5 align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i><b><font color="#339999">created
+              by the StarLogo development team, MIT Media Lab, Alan Epstein, Rebekah
+              Wahba, and Robert Tau</font></b></i></font></h5>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">StarLogo
+
+          is a program used to control "turtles" on the screen, much like Logo.
+
+          However, unlike Logo, StarLogo enables you to program hundreds or even
+
+          thousands of turtles and program the "patches" underneath the turtles
+
+          too!&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">StarLogo
+
+          is used primarily for modeling systems that have no leaders. Some examples
+
+          of these "leaderless" systems in our everyday world are bird flocks,
+
+          traffic jams, and termite and ant colonies. </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Let's
+
+          create a program to model a colony of artificial termites!&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">As
+
+          you go through this tutorial, you will be asked to type some things
+
+          on the computer. These will be in <b>Bold</b> letters so it will be
+
+          easy to figure out when and what to type. </font></p>
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+          <td height="20" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#006600">
+
+              &nbsp;<b>Create a New StarLogo File</b></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr align="right">
+
+          <td height="292" colspan="2" valign="top" width="100%">
+            <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Start
+
+          up the StarLogo program, and select the <i><font color="#FF3366">New</font></i>
+
+          menu command from the <i><font color="#FF3366">File</font></i> menu
+
+          to start a new model.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">There
+
+          are four panels in the Control Center, only two of which you can see
+
+          at a time. There is a Command and Procedures window for the Turtles,
+
+          which should be initially visible. There is also a Command and Procedures
+
+          window for the Observer that can be accessed by clicking on the Observer
+
+          button at the top of the window.</font>
+
+        <table width="100%" border="0" cellspacing="10" cellpadding="0" height="420">
+
+          <tbody><tr>
+
+                <td height="403" align="center" width="50%"><img src="http://education.mit.edu/starlogo/tutorial/images/turtlecom.gif" width="285" height="500" border="2"></td>
+
+                <td height="403" align="center" width="50%"><img src="http://education.mit.edu/starlogo/tutorial/images/observcom.gif" width="285" height="500" border="2"></td>
+
+          </tr>
+
+          <tr>
+
+            <td height="20" align="center" width="50%">
+
+              <h5><font face="Verdana, Arial, Helvetica, sans-serif" color="#006600">FIGURE
+
+                1: The Turtle Command Center</font><font face="Verdana, Arial, Helvetica, sans-serif">
+
+                </font></h5>
+
+            </td>
+
+            <td height="20" align="center" width="50%">
+
+              <h5><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#006600">FIGURE
+
+                2: The Observer Command Center </font></font></h5>
+
+            </td>
+
+          </tr>
+
+        </tbody></table>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When
+
+          you want to tell a turtle to do something you can type the command in
+
+          the Turtle Command Center or in the Procedures window. Commands typed
+
+          in the Command Center are executed immediately while commands typed
+
+          in the Procedures window must be called by either a button or another
+
+          command in the Command Center window.&nbsp; </font></p>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Commands
+
+          typed in the Turtle window will be executed by all the turtles. If you
+
+          want the observer to do something (like create new turtles or change
+
+          the color of all of the patches), you need to click on the Observer
+
+          button and type those commands into the Observer window</font>.</p>
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+          <td height="25" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><font color="#006600"><b>&nbsp;A
+
+              Simple Command</b></font></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr align="right">
+
+          <td height="70" colspan="2" valign="top" width="100%">
+            <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">When
+
+          you first open StarLogo, the program gives you some turtles to start.
+
+          (If you start a new project then you have to create some turtles yourself
+
+          using the&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">create-turtles</font>
+
+          Observer command and a number. If this is the case then skip the next
+
+          section and move to "Creating Turtles". </font></p>
+
+        <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Try
+
+          typing&nbsp;<font color="#0066FF" face="Courier New, Courier, mono">fd
+
+          10</font> in the Turtles Command Center, and return or enter. And there
+
+          they are! Since they are all facing out in different directions, by
+
+          moving forward they create a circle. Also notice that you only typed&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">fd
+
+          10</font> once and all of the turtles moved at the same time! Each command
+
+          you type is run by all of the turtles.</font></p>
+
+        <hr noshade="" align="left">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+          <td height="25" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">&nbsp;Creating
+
+              Turtles</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr align="right">
+
+          <td height="86" colspan="2" valign="top" width="100%">
+            <div align="left">
+
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">So how
+
+            can you make your own turtles? First, type&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">clearturtles</font><font face="Courier New, Courier, mono">
+
+            (<font color="#0066FF">ct</font>)</font> in the Observer Command Center
+
+            to get rid of the existing turtles. Then, in the same window type&nbsp;crt<b>
+
+            </b>and a number to create that number of turtles. </font></p>
+
+        </div>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          might be wondering, "Where are all the turtles?", since it looks like
+
+          there is only one turtle in the center of the StarLogo window. Well,
+
+          they're actually stacked up on top of each other. If you want to see
+
+          them all, switch to the Turtles Command Center and type <font color="#0066FF" face="Courier New, Courier, mono">fd
+
+          30</font>.</font></p>
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+          <td height="25" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">&nbsp;Making
+
+              a Procedure</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="790" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">A
+
+          procedure is a collection of commands, like the ones you have typed
+
+          in the Observer Command Center or the Turtle Command Center, that get
+
+          used together. All you have to do is type the name of the procedure
+
+          to make all the commands in that procedure run.&nbsp; </font></p>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">All
+
+          procedures go in one of the Procedures windows. First, let's put these
+
+          first few commands into a setup procedure in the Observer Procedure
+
+          window. Remember though that the Observer can only control the patches
+
+          and the creation of the turtles; it can however, send messages to the
+
+          turtles to ask them to do things. We need to use the special command</font><font size="2">&nbsp;<font face="courier new" color="#0066FF">ask-turtles</font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">when we
+
+          are in the Observer window and would like to ask the turtles to do something.</font>
+
+        </p>
+
+        <p align="left"> <font face="courier new" size="2"><font color="#0066FF">to
+
+          setup <br>
+
+          crt 30 <br>
+
+          ask-turtles [fd 10] <br>
+
+          end&nbsp;</font> </font> </p>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Remember
+
+          that the word <font color="#0066FF" face="Courier New, Courier, mono">to</font>
+
+          begins every procedure. (In this case, you are telling the computer
+
+          <i>how to "setup"</i>). The word 'end' must also close every
+
+          procedure so that the program knows when your commands are finished.
+
+          </font></p>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Try
+
+          running your first procedure. First type&nbsp;<font color="#0066FF">ct</font><b>
+
+          </b>in the Observer Command Center to clear the turtles. Now type&nbsp;<font color="#0066FF" face="Courier New, Courier, mono">setup</font>,
+
+          and watch your turtles appear. Typing&nbsp;setup caused the <i>setup
+
+          procedure </i>to run. </font></p>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">But
+
+          what if you don't want to have to type&nbsp;<font color="#0066FF">ct</font>
+
+          every time you start over. You can incorporate that into the <i>setup
+
+          procedure</i>: </font></p>
+
+        <p align="left"> <font face="courier new" color="#0066FF" size="2">to
+
+          setup <br>
+
+          <b>ct</b> <br>
+
+          crt 30 <br>
+
+          ask-turtles [fd 10] <br>
+
+          end&nbsp;</font> </p>
+
+        <div align="left">
+
+          <table width="100%" border="0" cellspacing="10" cellpadding="0" height="435" align="center">
+
+            <tbody><tr>
+
+                  <td align="center" valign="middle"><font size="2"><img src="http://education.mit.edu/starlogo/tutorial/images/setup.gif" width="361" height="504"></font></td>
+
+            </tr>
+
+            <tr>
+
+              <td align="center" valign="middle" height="16">
+
+                <h5><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+
+                  3: Setup Procedure in Observer Procedures </font></font></h5>
+
+              </td>
+
+            </tr>
+
+          </tbody></table>
+
+        </div>
+
+        <p align="left"><font size="2">Now the turtles will be automatically cleared
+
+          each time you type <font face="courier new" color="#0066FF">setup</font>.
+
+          Try it.&nbsp; </font></p>
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF">
+
+          <td height="25" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Saving Your Work</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">So
+
+          far, so good. Save your work up to this point. Use the <i><font color="#FF3366">Save
+
+          As</font></i> command in the <i><font color="#FF3366">File</font></i>
+
+          menu an, and type your name as the file to save. Click <font color="#FF3366">OK</font>.
+
+          It's usually a good idea to save your work every once in a while.&nbsp;
+
+          </font></p>
+
+        <hr noshade="" align="left">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="24" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Buttons</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="389" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          make it even easier to run the <i>setup procedure</i>, you can create
+
+          a <i>setup button</i>. Then, when you press the&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">button,
+
+          StarLogo will run the procedure <i>setup</i>. </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">First,
+
+          click on the blue button icon at the top of the main StarLogo window.
+
+          Then click on the white space below the icons. When a window pops up,
+
+          type<b> </b><font face="Courier New, Courier, mono" color="#0066FF">setup</font>
+
+          in the box where it says logo instruction. Now you have to select the
+
+          location where you put your <i>setup procedure</i>. Since you put it
+
+          in the Observer Procedures select Observer.</font>
+
+        </p><div align="left">
+
+          <table width="100%" border="0" cellspacing="10" cellpadding="0" height="243">
+
+            <tbody><tr>
+
+              <td height="38">
+
+                    <div align="center"><img src="http://education.mit.edu/starlogo/tutorial/images/button.gif" width="419" height="271" border="2"></div>
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td height="11">
+
+                <h5 align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+
+                  4: New Button Window</font></font></h5>
+
+              </td>
+
+            </tr>
+
+          </tbody></table>
+
+        </div>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          you have a <i>setup button</i> that when pressed, will run the StarLogo
+
+          procedure called <i>setup</i> which creates 30 turtles and moves them
+
+          forward. Try pushing the button.</font></p>
+
+        <hr noshade="" align="left">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="23" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Using Turtle Colors</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="266" colspan="2" valign="top" width="100%">
+            <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">You
+
+          just created 30 turtles (or termites). Let's make all of your termites<font color="blue">
+
+          <font color="#000000">blue</font></font>. Use the</font><font size="2">&nbsp;<font face="courier new" color="#0066FF">setcolor</font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif">command, or just</font>&nbsp;<font face="courier new" color="#0066FF">setc
+
+          blue</font>, <font face="Verdana, Arial, Helvetica, sans-serif">to set
+
+          the color of the turtles to be&nbsp;<font color="#000000">blue</font>.
+
+          Type</font>&nbsp;<font face="courier new"><b><font color="#0066FF">setc
+
+          blue</font></b></font> <font face="Verdana, Arial, Helvetica, sans-serif">in
+
+          the Turtle Command Center.&nbsp; </font></font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now
+
+          try making them <font color="black">red</font> (</font><font size="2"><font face="courer new" color="#0066FF">setc
+
+          red</font><font face="Verdana, Arial, Helvetica, sans-serif">) and add
+
+          that to your <i>setup procedure</i>:&nbsp; </font></font>
+
+            </p><p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">to
+              setup <br>
+              ct <br>
+              crt 30 <br>
+              <b>ask-turtles [setc red fd 10]</b> <br>
+              end&nbsp; </font>
+                </p><hr noshade="" align="center">
+            <table width="100%" border="0" height="461">
+              <tbody><tr>
+                <td height="38">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+                    <tbody><tr bgcolor="#FFFFCC">
+                      <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+                        &nbsp;Using Turtle Shapes</font></font></b></font></td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+              <tr>
+                <td height="443">
+                  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+                    you have 30 red turtles (or termites). Let's make the termites
+                    have a termite shape instead of a turtle shape. Go to the
+                    <i><font color="#FF3366">Windows</font></i> menu and select
+                    <i><font color="#FF3366">Shape Chooser</font></i>. Select
+                    a blank shape, and double click on it. Select the size of
+                    shape you want to use (keeping in mind that you will have
+                    to use the same canvas patch size). This can be selected at
+                    the top of the shape editor window. Then you can use the drawing
+                    tools to create your shape. Name your shape at the bottom
+                    of the shape editor window (preferably <i>termite-shape</i>
+                    for our tutorial purposes), and you now have a shape ready
+                    for your termites. Just use the name or number of the shape
+                    to "setshape". Note that shapes can only be seen
+                    at sizes 8, 16, and 32 in Starlogo.</font></p>
+                  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Try
+                    setting your termites to your new shape in your<i> </i></font><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><i>setup
+                    procedure</i>:&nbsp; </font></font> </p>
+                  <p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">to
+                    setup <br>
+                    ct <br>
+                    crt 30 <br>
+                    <b>ask-turtles [setshape termite-shape setc red fd 10]</b>
+                    <br>
+                    end&nbsp; </font>
+                  <table width="100%" border="0" height="185">
+                    <tbody><tr>
+                      <td height="190">
+                        <div align="center"><img src="http://education.mit.edu/starlogo/tutorial/images/shapechooser.gif" width="298" height="148">
+                          <table width="100%" border="0">
+                            <tbody><tr>
+                              <td>
+                                <div align="center">
+                                  <h1><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+                                    5: Shape Chooser</font></font></h1>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="190">
+                        <div align="center">
+                          <p><img src="http://education.mit.edu/starlogo/tutorial/images/shapeeditor.gif" width="363" height="443"></p>
+                          <h1><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+                            6: Shape Editor</font></font></h1>
+                          <p><img src="http://education.mit.edu/starlogo/tutorial/images/termitesexample.gif" width="548" height="195"></p>
+                          <h1><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+                            7: Example Project with a Termite-shape</font></font></h1>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                  </p><p><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+                    that you have 30 red termite-shaped turtles, why don't you
+                    give them something to do. First, we are going to fill part
+                    of the termites' environment with woodchips. Later we can
+                    give the termites rules about what to do with the woodchips.&nbsp;
+                    </font> </p>
+                  <p><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">Note:
+                    If you haven't saved in a while, save your work now.</font></p>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="16" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Creating Patches</font></font></b></font></td>
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="230" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You're
+
+          now ready to create the woodchips. While we could use the turtles for
+
+          woodchips, it is easier to use patches.</font></p>
+
+            <div align="left">
+              <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                <tbody><tr>
+                  <td align="center"><img src="http://education.mit.edu/starlogo/tutorial/images/paint.gif" width="749" height="541" border="2"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h5 align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+                      8: Paint Panel</font></font></h5>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can draw in your own woodchips by using the StarLogo paint tools. First,
+
+          click on top of the main StarLogo window. Then, click on the paint brush
+
+          icon to choose the painting option. The paint palette will pop up. In
+
+          the box on the left, click on the pencil icon. In the box on the right,
+
+          click on yellow so you can draw yellow woodchips. Now just click on
+
+          the canvas wherever you want the woodchips to appear.&nbsp; </font>
+
+        </p>
+
+        <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">You
+
+          can also set the color of the whole patch-canvas by using the Observer
+
+          Command</font>&nbsp;<font face="courier new" color="#0066FF">setpc</font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">and the
+
+          name of a color or the number of a color.</font>&nbsp;
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Another
+
+          way to change the color of a single patch is to use the Turtle Command</font>&nbsp;<font face="courier new" color="#0066FF">stamp</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">.
+
+          For example type this in the Turtle Command Center</font>
+
+        </p><p align="left"><font face="courier new"><font size="2" color="#0066FF">repeat
+
+          100 [fd 10 stamp yellow]</font> </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+
+          says to the turtles to walk 10 steps and change the color of the patch
+
+          they are on to yellow. They all repeat this action 100 times.&nbsp;</font><font size="2">
+
+          </font>
+
+        </p><hr noshade="" align="left">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="20" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Computer Generated Woodchips</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="626" colspan="2" valign="top" width="100%">
+            <p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+
+          previous procedure did not really create a random arrangement of woodchips.
+
+          If we want to really scatter the woodchips we need to change the direction
+
+          of each turtle, and use the random command. </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Type
+
+          this in the <i>Turtle Command Center</i>:&nbsp; </font><font size="2">
+
+          </font>
+
+        </p><p align="left"><font face="courier new" size="2" color="#0066FF">repeat
+
+          100 [seth random 360 jump random 200 stamp yellow]</font><font face="courier new" size="2"><b>&nbsp;</b>
+
+          </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+
+          says that each turtle should jump in a random direction and stamp the
+
+          patch that it lands on yellow. Each turtle should repeat this process
+
+          100 times. </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now
+
+          we can write a procedure that puts woodchips on the patch-canvas. Put
+
+          this procedure in the Turtle Procedures window. </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          patch-setup<br>
+
+          repeat 100 [seth random 360<br>
+
+          jump random 200 stamp yellow]<br>
+
+          end</font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Next
+
+          we can add this command to the <i>setup procedure</i> in the Observer
+
+          Procedures window which now looks like this:&nbsp; </font><font size="2">
+
+          </font>
+
+        </p><p align="left"><font face="courier new" size="2" color="#0066FF">to setup
+
+          <br>
+
+          ct <br>
+
+          crt 30 <br>
+
+          ask-turtles [setc red fd 10] <br>
+
+          <b>ask-turtles [patch-setup]</b><br>
+
+          end</font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now
+
+          when you press the <i>setup button</i>, you see red termites and yellow
+
+          woodchips.&nbsp;</font><font size="2"> </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">If
+
+          you want to clear the patches, use the command</font><font size="2">&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">cp</font><font face="Verdana, Arial, Helvetica, sans-serif">.
+
+          You can therefore use both</font><font face="courier new"> <font color="#0066FF" face="Courier New, Courier, mono">ct</font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif">and</font>&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">cp</font><font face="Verdana, Arial, Helvetica, sans-serif">
+
+          to clear the patches and the turtles. Add that to your <i>setup procedure</i>:</font>&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          setup<br>
+
+          ct <br>
+
+          <b>cp</b><br>
+
+          crt 30 <br>
+
+          ask-turtles [setc red fd 10] <br>
+
+          ask-turtles [patch-setup] <br>
+
+          end</font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Note:
+
+          If you know you want to clear both turtles and patches, you can use
+
+          the command <font face="Courier New, Courier, mono" color="#0066FF">ca</font>,
+
+          or <font face="Courier New, Courier, mono" color="#0066FF">clear all</font>.
+
+          Let's add <font color="#0066FF" face="Courier New, Courier, mono">ca</font>
+
+          to our <i>setup procedure</i>:</font><font size="2">&nbsp; </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          setup <br>
+
+          <b>ca</b> <br>
+
+          crt 100 <br>
+
+          ask-turtles [patch-setup] <br>
+
+          ask</font><font face="Courier New, Courier, mono" size="2" color="#0066FF">-turtles
+
+          [setc red fd 10] <br>
+
+          end </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Now
+
+          you've completed the <i>setup procedure</i> for our program, and learned
+
+          something about making a lot of termites, coloring things, and using
+
+          procedures.&nbsp; </font>
+
+        </p><p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Note:
+
+          If you haven't saved recently, you should do so now.</font>
+
+        </p><hr align="center" noshade="">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="19" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Creating a Multi-Procedure Problem</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="1598" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">So
+
+          how can you make this bunch of termites interact with the woodchips?
+
+          To do this, you need to think about all the tasks the termites need
+
+          to accomplish. If you break down the tasks, then it's easier to write
+
+          procedure for them.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          want the termites to search for woodchips and place them into piles.
+
+          But to place woodchips into piles, termites need to first find a woodchip.
+
+          But to find woodchips, they need to be able to move around to get to
+
+          the woodchips. Once they've found a woodchip, they need to pick it up.
+
+          Then they need to find a place to put it.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">And
+
+          then to actually put it down.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Therefore,
+
+          there are four steps a termite needs to follow to succesfully make woodchip
+
+          piles.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">a)
+
+          First they need to know how to <a href="#Move">move</a>.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">b)
+
+          Then they need to <a href="#search">search</a> for woodchips.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">c)
+
+          Next, they need to <a href="#find">find</a> a pile for the new chip.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">d)
+
+          Last, they need to <a href="#drop">drop</a> the woodchip down in the
+
+          pile.&nbsp; </font>
+
+        </p><hr align="left">
+
+        <h4 align="left"><font size="2"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><a name="Move"></a><font size="3" color="#339999">a)
+
+          Movement</font></font></b> </font></h4>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">First,
+
+          get the termites to move around, since that's the first thing a termite
+
+          needs to know how to do before it can do more complicated things.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          do this, type this procedure in the <i>Turtle Procedures</i> window:
+
+          </font>
+
+        </p><p align="left"><font face="courier new" size="2"><font face="Courier New, Courier, mono" color="#0066FF">to
+
+          wiggle</font></font> <font face="Courier New, Courier, mono" color="#0066FF" size="2"><br>
+
+          fd 1 <br>
+
+          rt random 50 <br>
+
+          lt random 50 <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">With
+
+          this procedure, the termite moves forward 1 unit and then wiggles by
+
+          turning a little to the left and to the right.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Try
+
+          typing</font><font size="2">&nbsp;<font face="courier new"><b><font face="Courier New, Courier, mono" color="#0066FF">wiggle</font></b></font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">a couple
+
+          of times in the <i>Turtle Command Center</i> and watch what happens.
+
+          </font>
+
+        </p><hr align="left">
+
+        <h4 align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><font size="4"><a name="Search"></a><font size="3" color="#339999">b)
+
+          Search for Woodchips</font></font></b> </font></h4>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Keeping
+
+          the main goal in mind, the next task the termites need to be able to
+
+          do is find a woodchip.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can call the procedure <i>search-for-chip</i>. If a termite sees a yellow
+
+          woodchip, then it removes it from the patch.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          do this, type this procedure in the <i>Turtle Procedures window</i>.
+
+          Leave a line below the <i>wiggle procedur</i>e.</font>
+
+        </p><p align="left"><font face="courier new" size="2"><font color="#0066FF" face="Courier New, Courier, mono">to
+
+          search-for-chip </font></font> <font color="#0066FF" face="Courier New, Courier, mono" size="2"><br>
+
+          if pc = yellow <br>
+
+          [stamp black jump 20 stop]<br>
+
+          wiggle <br>
+
+          search-for-chip <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This
+
+          procedure means that every termite checks whether the patch it's on
+
+          is yellow, and if it is, it turns the patch to black (to signify that
+
+          it picked up that woodchip). It then jumps far away, and stops.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can test this procedure by typing</font><font size="2">&nbsp;<font face="courier new"><b><font color="#0066FF" face="Courier New, Courier, mono">search-for-chip</font></b></font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">in the <i>Turtle
+
+          Command Center</i>. This will result in the termites moving around and
+
+          turning many of the yellow woodchip patches to black. Of course, the
+
+          red termites will be covering the black patches so you won't be able
+
+          to see them yet.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">So
+
+          now you have <i>search-for-chip</i> which changes yellow woodchips to
+
+          black to indicate that they have been picked up and are no longer on
+
+          the ground. </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can also change your <i>search-for-chip procedure</i> to do </font><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><i>wiggle</i></font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">before checking
+
+          for a woodchip, and to keep going as long as it hasn't found one.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Find
+
+          the <i>search-for-chip procedure</i> in the <i>Turtle Procedures</i>
+
+          window and change it to look like this:</font><font size="2">&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="courier new" color="#0066FF" size="2">to search-for-chip
+
+          <br>
+
+          <b><font color="#FF0000">wig</font></b><br>
+
+          if pc = yellow <br>
+
+          [stamp black <br>
+
+          stop] <br>
+
+          <b>search-for-chip</b> <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          click on the<i> StarLogo window</i>. WHOOPS! I'm sorry. That was an
+
+          error. A popup box displays the following phrase: "i don't know how
+
+          to wig in the procedure named search-for-chip in the turtle procedures
+
+          page". Sometimes errors will occur during programming, and a popup box
+
+          will help you figure out what went wrong where.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Click
+
+          <font color="#0066FF">OK</font> in the popup box, and change</font><font size="2">&nbsp;<font face="courier new" color="#FF0000"><b>wig</b></font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">to</font><font size="2">&nbsp;<font face="courier new"><b><font color="#0066FF">wiggle</font></b></font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+          in the <i>search-for-chip procedure</i>. That should fix the bug in
+
+          your program. </font>
+
+        </p><hr align="left">
+
+        <h4 align="left"><font size="2"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><a name="Find"></a><font size="3" color="#339999">c)
+
+          Find a New Pile</font></font></b> </font></h4>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          that the termite is carrying the woodchip, it needs to find a new pile
+
+          to place it. This procedure will look a little like <i>search-for-chip</i>.
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          do this, type this procedure in the <i>Turtle Procedures </i>window.
+
+          Leave a line below the <i>search-for-chip procedure</i>. </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">to
+
+          find-new-pile <br>
+
+          if pc = yellow<br>
+
+          [stop]<br>
+
+          wiggle<br>
+
+          find-new-pile<br>
+
+          end</font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">All
+
+          you had to do for <i>find-new-pile</i> was tell the termite to <i>wiggle</i>,
+
+          and if it sees a yellow woodchip, to stop.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Otherwise,
+
+          keep looking (do&nbsp;<i>find-new-pile</i> again).&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can test your latest procedure by typing</font><font size="2">&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">find-new-pile</font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+          in the <i>Turtle Command Center</i>. The termites will move around looking
+
+          for an existing woodchip on the ground and then stop.</font><font size="2">&nbsp;
+
+          </font>
+
+        </p><hr align="left">
+
+        <h4 align="left"><font size="2"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><a name="Drop"></a><font size="3" color="#339999">d)
+
+          Find a Place to Drop the Woodchip</font></font></b> </font></h4>
+
+        <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          just wrote a procedure for the termite to find a new pile to drop its
+
+          chip. But the termite just stops once it's found it.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          you need to write a procedure for the termite to put down its woodchip.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          know a patch is empty if it's color is black, that is if&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">pc
+
+          = black</font>.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          drop the woodchip, you can make the black patch turn yellow by stamping
+
+          it yellow.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          do this, type this procedure in the <i>Turtle Procedures</i> window.
+
+          Leave a line below the <i>find-new-pile procedure</i>. </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font face="Courier New, Courier, mono" color="#0066FF">to
+
+          find-empty-patch</font></font> <font face="Courier New, Courier, mono" color="#0066FF" size="2"><br>
+
+          wiggle <br>
+
+          if pc = black <br>
+
+          [stamp yellow <br>
+
+          stop] <br>
+
+          find-empty-patch <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Here
+
+          you tell the termite to&nbsp;<font color="#000000"><i>wiggle</i></font>,
+
+          and if it finds an empty (black) patch, stamp the patch yellow (the
+
+          same as dropping a yellow woodchip), and stop. If not, keep searching
+
+          for an empty patch. </font>
+
+        </p><hr noshade="" align="left">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="23" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Continue the Search</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">After
+
+          they've found an empty patch and dropped the woodchip, you'll want them
+
+          to keep looking around for more woodchips so that the piles of chips
+
+          can form quickly.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can write a simple <i>get-away procedure</i> to accomplish this:&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="courier new" size="2"><font face="Courier New, Courier, mono" color="#0066FF">to
+
+          get-away</font></font> <font face="Courier New, Courier, mono" color="#0066FF" size="2"><br>
+
+          seth random 360 <br>
+
+          jump 20 <br>
+
+          if pc = black [stop] <br>
+
+          get-away <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">seth
+
+          random 360</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+          sets the heading of the termite to be some random compass between 0
+
+          and 360 degrees.</font><font size="2">&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">jump
+
+          20</font></font><font face="courier new" size="2"> </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">is
+
+          similar to&nbsp;<font color="#0066FF" face="Courier New, Courier, mono">fd
+
+          2</font></font><font face="Courier New, Courier, mono" color="#0066FF" size="2">0</font><font size="2">,
+
+          <font face="Verdana, Arial, Helvetica, sans-serif">but much faster,
+
+          more like teleporting. If a termite lands on a black patch, stop. Otherwise,
+
+          keep jumping to get away.</font>&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Add</font>
+
+          <font face="Courier New, Courier, mono" color="#0066FF" size="2">get-away</font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">after it
+
+          puts the woodchip down in our <i>find-empty-patch procedure</i>:</font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">to
+
+          find-empty-patch <br>
+
+          wiggle <br>
+
+          if pc = black <br>
+
+          [stamp yellow <br>
+
+          <b>get-away</b> <br>
+
+          stop] <br>
+
+          find-empty-patch <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          can test your last rule by typing</font><font size="2">&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">find-empty-patch</font></font><font face="courier new" size="2"><b>
+
+          </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">in
+
+          the <i>Turtle Command Center</i>. The termites will move around looking
+
+          for a patch to drop their yellow woodchip and jump away. </font>
+
+        </p><hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="19" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Putting the Procedures Together</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In
+
+          summary, there are four rules that each termite follows to successfully
+
+          make woodchip piles (the <i>wiggle procedure</i> is a sub-procedure
+
+          because it is included in the <i>search-for-chip procedure</i> and the
+
+          <i>get-away procedure</i> is also a sub-procedure because it is included
+
+          in the <i>find-empty-patch procedure</i>):&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If
+
+          the termite sees a woodchip, pick it up&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Search
+
+          for another woodchip in a pile&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Find
+
+          an empty space near that pile and put the woodchip down&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          make all these procedures run at the same time, you can write one more
+
+          procedure to call the other three. To do this, type this procedure in
+
+          the <i>Turtle Procedures</i> window. Leave a line below the find-empty-patch
+
+          procedure. </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" color="#0066FF" size="2">to
+
+          go</font> <font face="Courier New, Courier, mono" color="#0066FF" size="2"><br>
+
+          search-for-chip <br>
+
+          find-new-pile <br>
+
+          find-empty-patch <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          type</font><font size="2">&nbsp;<font face="Courier New, Courier, mono" color="#0066FF">go</font></font>
+
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2">in the <i>Turtle
+
+          Command Center</i> and see that your procedures work.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now
+
+          all your procedures are completed and tested!&nbsp;</font>
+
+        </p><hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="23" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Creating Another Button</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Unfortunately
+
+          your <i>go procedure</i> tells each one of your 100 termites to move
+
+          a woodchip to another pile, but only <i>one</i> time. What you need
+
+          is a button to run the <i>go procedure</i> over and over again.&nbsp;
+
+          </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">To
+
+          create a <i>go button</i>, press the button icon again in the StarLogo
+
+          window, then click in the whitespace below to make a new button. In
+
+          the popup window type <font face="Courier New, Courier, mono" color="#0066FF">go</font>
+
+          as its <i>logo instruction</i>, and click the box that says <i>Forever</i>
+
+          to make the procedure go continuously. Click Turtle because that is
+
+          where you wrote your procedure. Finally, click <font color="#0066FF">OK</font>.&nbsp;
+
+          </font>
+
+        <table width="100%" border="0" cellspacing="10" cellpadding="0">
+
+          <tbody><tr>
+
+                <td align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="http://education.mit.edu/starlogo/tutorial/images/termites.gif" width="741" height="241" border="2"></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+
+                  <h5 align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><font color="#006600">FIGURE
+                    9: Go Button (with Forever selected)</font></font></h5>
+
+            </td>
+
+          </tr>
+
+        </tbody></table>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Don't
+
+          forget to save your file.&nbsp; </font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now,
+
+          press <i>setup</i> and then press <i>go</i> and watch the termites walk
+
+          around collecting woodchips into piles. When you want to stop the simulation
+
+          press the <i>go</i> button again. </font>
+
+        </p><hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="23" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Congratulations!</font></font></b></font></td>
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You
+
+          have written your first StarLogo program! Feel free to make any changes
+
+          to the program you like, such as changing the termite's color while
+
+          it's carrying a woodchip to indicate when it's carrying. </font></p>
+
+        <hr noshade="" align="center">
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="24" colspan="2" valign="top" width="100%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900" rules="rows">
+
+          <tbody><tr bgcolor="#FFFFCC">
+
+            <td width="788"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#000000"><font color="#006600">
+
+              &nbsp;Final Code</font></font></b></font></td>
+
+          </tr>
+
+        </tbody></table>
+
+      </td>
+
+    </tr>
+
+    <tr bgcolor="#FFFFFF" align="right">
+
+          <td height="40" colspan="2" valign="top" width="100%">
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In
+
+          the Observer Procedures Window: </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          setup <br>
+
+          &nbsp;ca <br>
+
+          &nbsp;crt 30 <br>
+
+          &nbsp;ask-turtles [setc red fd 10]&nbsp; <br>
+
+          &nbsp;ask-turtles [patch-setup]<br>
+
+          end</font>
+
+        </p><p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In
+
+          the Turtle Procedures Window:</font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          patch-setup<br>
+
+          &nbsp;repeat 100 [seth random 360 jump random 200 stamp yellow] <br>
+
+          end </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          </font> <font face="Courier New, Courier, mono" size="2" color="#0066FF">wiggle
+
+          <br>
+
+          &nbsp;fd 1 <br>
+
+          &nbsp;rt random 50 <br>
+
+          &nbsp;lt random 50 <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          search-for-chip <br>
+
+          &nbsp;if pc = yellow <br>
+
+          &nbsp;&nbsp;&nbsp;[stamp black jump 20 stop] <br>
+
+          &nbsp;wiggle <br>
+
+          &nbsp;search-for-chip <br>
+
+          end</font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          find-new-pile <br>
+
+          &nbsp;if pc = yellow<br>
+
+          &nbsp;&nbsp;&nbsp;[stop]<br>
+
+          &nbsp;wiggle <br>
+
+          &nbsp;find-new-pile <br>
+
+          end&nbsp; </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          find-empty-patch <br>
+
+          &nbsp;wiggle <br>
+
+          &nbsp;if pc = black <br>
+
+          &nbsp;&nbsp;&nbsp;[stamp yellow <br>
+
+          &nbsp;&nbsp;&nbsp;get-away <br>
+
+          &nbsp;&nbsp;&nbsp;stop] <br>
+
+          &nbsp;find-empty-patch <br>
+
+          end </font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          get-away<br>
+
+          &nbsp;seth random 360 <br>
+
+          &nbsp;jump 20 <br>
+
+          &nbsp;if pc = black [stop] <br>
+
+          &nbsp;get-away <br>
+
+          end</font>
+
+        </p><p align="left"><font face="Courier New, Courier, mono" size="2" color="#0066FF">to
+
+          go <br>
+
+          &nbsp;search-for-chip <br>
+
+          &nbsp;find-new-pile <br>
+
+          &nbsp;find-empty-patch <br>
+
+          end </font>
+
+      </p></td>
+
+    </tr>
+
+  </tbody></table>
+
+</td>
+
+  </tr>
+
+</tbody></table>
+</html>
