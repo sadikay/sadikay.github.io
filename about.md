@@ -6,7 +6,7 @@ title: About Sadik Ay
 <div class="post">
 	<h3 class="pageTitle">About Me!</h3>
 	<img src="https://dl-web.dropbox.com/get/Herkese%20A%C3%A7%C4%B1k%20Klas%C3%B6r/IMG_2084.JPG?_subject_uid=124692684&w=AADKtlM-VXc1U0Z8SaRyPCGfdy1DUqi8uiwXiDwK5EI00g" alt=""/>
-	<p style="color:red">Alright! Sometimes somethings went wrong.</p>
+	<p style="color:red">Alright! Maybe sometimes something went wrong.</p>
 	<p>I am Sadik Ay, student of senior class Computer Engineering at Dumlupınar University in Turkey,
 	I have studied at Budapest University of Technology and Economics by student exchange programme as well.</p>
 	<p>I am working in a startup company and developing Ruby on Rails since August 2014.</p>
