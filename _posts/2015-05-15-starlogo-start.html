@@ -180,16 +180,11 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
 
                     <hr noshade="" align="left">
                 </td>
-
             </tr>
-
             <tr>
-
                 <td height="25" colspan="2" valign="top">
-
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
                            rules="rows">
-
                         <tbody>
                         <tr bgcolor="#FFFFCC">
                             <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
@@ -206,369 +201,97 @@ decentralized systems, such as bird flocks, traffic jams, and ant colonies"
                     <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Hadi bir örnek üzerinde
                         kendi projemizi oluşturmaya çalışalım.
                     </font></p>
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">To
-
-                        start a new project, choose New from the File menu of the Control Center.
-
-                        Make sure you are in the Observer Command Center and type (pressing
-
-                        the return key after each command): </font><font size="3"><br>
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        Control Center -> File -> New.
+                        Observer Command Center sekmesi üzerinde: </font><font size="3"><br>
                         <br>
-
                         <font face="Courier New, Courier, mono" color="#0066FF">crt 280</font></font>
-
                         <font size="3"><br>
+                            <font face="Verdana, Arial, Helvetica, sans-serif">StarLogo 280 turtle oluşturur. (<font face="Courier New, Courier, mono" color="#0066FF">crt</font>
+                                create-turtles code base). Default olarak turtlelar (0, 0) konumunda,
+                                ekranın orta kısmında başlatılırlar. </font></font></p>
 
-                            <br>
-
-                            <font face="Verdana, Arial, Helvetica, sans-serif">StarLogo creates
-
-                                280 turtles (<font face="Courier New, Courier, mono" color="#0066FF">crt</font>
-
-                                stands for create-turtles). By default, the turtles start at position
-
-                                (0, 0), in the middle of the screen. The "dot" in the middle of the
-
-                                screen is actually a tall "pile" of turtles. </font></font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Next,
-
-                        switch to the Turtle Command Center and type the following commands
-
-                        (pressing return after each command): <br>
-
-                        <br>
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        Sonra, aşağıdaki komutu çalıştıralım: <br>
                     </font><font size="3"><font face="Courier New, Courier, mono" color="#0066FF">fd
-
                         15</font></font> <font size="3"><br>
-
                         <br>
-
-                        <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle moves
-
-                            forward 15 steps. When new turtles are created, their headings are "spaced
-
-                            out" from one another, so the new turtles move in different directions.
-
-                            In this case, the turtles form a circle of radius 15 around the point
-
-                            (0, 0). </font><br>
-
+                        <font face="Verdana, Arial, Helvetica, sans-serif">Her turtle 15 adım ötelenmektedir.
+                            Oluşturulan her turtle nin heading kısmı diğerleri ile arasında aralık barındırdığından,
+                            ötelenme yönleri farklı olmaktadır.
+                            Bu durumda (0, 0) noktası etrafınfa yarıçapı 15 olan bir çember oluştururlar. </font><br>
                         <br>
-
                         <font face="Courier New, Courier, mono" color="#0066FF">seth 0 fd 30</font></font>
 
                         <font size="3"><br>
 
-                            <br>
-
-                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle sets
-
-                                its heading to 0 (north, the top of the screen), then moves forward
-
-                                30 steps. Since all turtles are headed in the same direction, the circle
-
-                                moves as a unit. <br>
-
+                            <font face="Verdana, Arial, Helvetica, sans-serif">
+                                Bu komut ile her turtle'ın heading kısmı 0 olarak set edilir.
+                                Daha sonra 30 birim ötelenir<br>
                             </font><br>
-
                             <font face="Courier New, Courier, mono" color="#0066FF">pd fd 50</font></font>
-
                         <font size="3"><br>
-
                             <br>
-
-                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle puts
-
-                                its "pen down" (<font color="#0066FF" face="Courier New, Courier, mono">pd</font>),
-
-                                then moves forward 50 steps. Each turtle draws in its own color. Note
-
-                                that the turtles "wrap" when they reach the edge of the screen. <br>
-
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Her turtle ın geçtiği yer üzeinden
+                                 "pen down" (<font color="#0066FF" face="Courier New, Courier, mono">pd</font>),
+                                komutu çalıştırılır ve her turtle kendi rengini çizer.<br>
                             </font><br>
-
                             <font face="Courier New, Courier, mono" color="#0066FF">repeat 36 [fd
 
                                 2 rt 10]</font><br>
-
-                            <br>
-
-                            <font face="Verdana, Arial, Helvetica, sans-serif">Each turtle draws
-
-                                a circle, repeatedly moving forward 2 steps and turning right 10 degrees.
-
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Bu komut ile her turtle bir çember çizer,
+                                tekrarlı bir şekilde iki birim ötelenir ve sağa doğru 10 derecelik bir dönüş gerçekleştirir.
                             </font></font></p>
 
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Now,
-
-                        switch back to the Observer command center and type <br>
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        Şimdi de Observer command center üzerinde aşağıdaki komutu çalıştıralım:
                     </font><font size="3"><br>
-
                         <font face="Courier New, Courier, mono" color="#0066FF">cg</font></font>
-
-                        <font size="3"><br>
-
-                            <br>
-
-                            <font face="Verdana, Arial, Helvetica, sans-serif">This clears the graphics,
-
-                                turning all of the patches to black (but not affecting the turtles).
-
+                        <font size="3"><br><br>
+                            <font face="Verdana, Arial, Helvetica, sans-serif">Bu komut, ekrandaki
+                                çizimi temizler ve bütün patch' leri siyaha çevirir. (Bu durum turtle'ları etkilemez).
                             </font></font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">It
-
-                        might be useful to have some buttons that allow you to control the "turtle
-
-                        paintbrush" interactively. To create a new button, select the button
-
-                        tool from the Main Toolbar, then click in the Interface area and "drag
-
-                        out" a rectangle. A dialog box appears. In the Logo Instruction field,
-
-                        type <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>.
-
-                        Be sure that the "Turtle" and not the "Observer" item is checked. Then
-
-                        click OK. Your new button appears. Whenever you click the button, all
-
-                        of the turtles move forward one step. </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">There
-
-                        are two types of StarLogo buttons. You just created a <i>once-button</i>:
-
-                        when you click the button, it executes its instruction once. Let's change
-
-                        the <font color="#0066FF" face="Courier New, Courier, mono">fd 1</font>
-
-                        button to the other type of button: a <i>forever-button</i>. Select
-
-                        the <font color="#0066FF" face="Courier New, Courier, mono">fd 1</font>
-
-                        button (by control-clicking on it, or by dragging a rectangle around
-
-                        the button). Then double-click on the selected button. The button's
-
-                        dialog box reappears. (You can also get the button's dialog box by single-clicking
-
-                        on the button with the button tool.) Check the forever box, then click
-
-                        OK. Notice the looping pair of arrows on the face of the button. These
-
-                        looping arrows indicate that the button is a forever-button. </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Click
-
-                        on the <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>
-
-                        button. The turtles execute the<font color="#0066FF" face="Courier New, Courier, mono">
-
-                            fd 1</font> instruction again and again, so the circle keeps moving
-
-                        forward. Forever-buttons run in the "background": you can execute other
-
-                        instructions in the command center while forever-buttons are running.
-
-                        Try typing <font face="Courier New, Courier, mono" color="#0066FF">rt
-
-                            45</font> in the Turtle Command Center. The circle of turtles veers
-
-                        to the right. Switch to the Observer command center and type cg: the
-
-                        graphics clear but the turtles continue to draw. To stop the turtles,
-
-                        click on the <font color="#0066FF" face="Courier New, Courier, mono">fd
-
-                            1</font> forever-button. </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">You
-
-                        might want to add some additional buttons. For example, make a new forever-button
-
-                        with the instruction <font face="Courier New, Courier, mono" color="#0066FF">rt
-
-                            5</font>. Click on both the <font face="Courier New, Courier, mono" color="#0066FF">fd
-
-                            1</font> button and the <font face="Courier New, Courier, mono" color="#0066FF">rt
-
-                            5</font> button. (StarLogo allows forever buttons to run in parallel.)
-
-                        The turtles all draw circles. By clicking the <font face="Courier New, Courier, mono"
-                                                                            color="#0066FF">rt
-
-                            5</font> button on and off selectively, you can move the turtles around
-
-                        the screen. </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">It
-
-                        might be useful to add cg button so that you can easily clear the graphics.
-
-                        The <font color="#0066FF" face="Courier New, Courier, mono">cg</font>
-
-                        button should be once-button, not a forever-button, since you don�t
-
-                        want StarLogo to continue clearing the graphics repeatedly. In addition,
-
-                        since cg is an observer command, you should be sure to check "Observer"
-
-                        next to the Logo Instruction field when creating your button. You might
-
-                        also want to add once-buttons to lift up the turtles' pens (<font color="#0066FF"
-                                                                                          face="Courier New, Courier, mono">pu</font>)
-
-                        and to put the pens down (<font color="#0066FF" face="Courier New, Courier, mono">pd</font>).
-
-                        (Pen up and pen down are both turtle commands, so check "Turtle" next
-
-                        to the Logo Instruction field.) </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">If
-
-                        you plan to save the paintbrush project, it would be a good idea to
-
-                        write a "setup" procedure so that you can recreate the paintbrush easily
-
-                        in the future. First, go to the Observer Procedures window. Type:</font><font size="3">
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        StarLogo buton oluşturucu ile bize daha fazla kolaylıklar sağlamaktadır.
                         <br>
+                        <font face="Courier New, Courier, mono" color="#0066FF">fd 1</font>
 
-                        <br>
+                        :komutunu buton oluşturucu ile çok daha efektif bir şekilde kullanbiliriz. </font></p>
 
-                        <font face="Courier New, Courier, mono" color="#0066FF">to setup <br>
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Şimdi de
+                        <font face="Courier New, Courier, mono" color="#0066FF">rt 5</font>
+                        komutu için bir tane forever-button oluşturarak <font face="Courier New, Courier, mono" color="#0066FF">fd
 
-                            ca crt 280 <br>
+                            1</font> </font> butonu ile beraber kullanalım.</p>
 
-                            ask-turtles [fd 15 seth 0 pd] <br>
-
-                            end</font></font></p>
-
-                    <p align="left"><font size="3">T<font face="Verdana, Arial, Helvetica, sans-serif">his
-
-                        procedure adds a new word to the list of commands which the observer
-
-                        knows. First, the observer clears the Graphics area (<font face="Courier New, Courier, mono"
-                                                                                   color="#0066FF">ca</font>
-
-                        stands for clear all). Then, the observer creates 280 turtles. Next,
-
-                        the observer asks the turtles to perform the commands listed inside
-
-                        the square brackets []. The ask-turtles command in effect transfers
-
-                        control from the observer to the turtles--just like when you switch
-
-                        from the Observer Command Center to the Turtle Command Center and back.
-
-                        After the square brackets are closed, the procedure returns control
-
-                        to the observer. </font></font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Once
-
-                        you've written the procedure, go back to the Interface area and make
-
-                        a once-button whose Logo Instruction is the command setup. When you
-
-                        click the setup button, StarLogo reinitializes the paintbrush. </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Here
-
-                        are some other things to try with the paintbrush project:</font><font size="3">
-
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        <font color="#0066FF" face="Courier New, Courier, mono">cg</font>
+                        komutunu ekranı temizlemek için kullandığımızdan sık kullanacağımız bir komut olur ve
+                        "Observer" seçeneğini seçerek forever-button olmayan bir buton oluşturalım.
                     </font></p>
 
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Make
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                        StarLogo'da sık kullandığımız komutları bir prosedüre çevirerek sürekli
+                        aynı komutu bir daha yazmaktan kurtulmuş oluruz.
+                        'Observer Procedures window' üzerinde aşağıdaki komutu yazarak bir 'setup' procedürü
+                        oluşturalım:</font><font size="3">
+                        <br>
+                        <font face="Courier New, Courier, mono" color="#0066FF">to setup <br>
+                            ca crt 280 <br>
+                            ask-turtles [fd 15 seth 0 pd] <br>
+                            end</font></font></p>
 
-                        a slider called "turn", then change the<font face="Courier New, Courier, mono">
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                    Şimdi de bu yazdığımız prosedüre göre bir buton oluşturup işimizi daha da kolaylaştıralım.</p>
 
-                        </font></font><font face="Courier New, Courier, mono" size="3" color="#0066FF">rt
-
-                        5</font> <font face="Verdana, Arial, Helvetica, sans-serif" size="3">button
-
-                        to</font> <font face="Courier New, Courier, mono" size="3" color="#0066FF">rt
-
-                        turn</font><font face="Courier New, Courier, mono" size="3">. <font
-                            face="Verdana, Arial, Helvetica, sans-serif">With
-
-                        the new slider, you can more interactively control the turning radius
-
-                        of the turtles. </font></font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Add
-
-                        buttons for changing the colors of the turtles. For example, create
-
-                        a forever-button with the instruction</font><font size="3"> <font
+                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Bir turtle
+                        forever-button oluşturarak turtle'ların rengini oluşturabiliriz.<br></font><font size="3"> <font
                             face="Courier New, Courier, mono" color="#0066FF">setc
-
                         color + 1</font></font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Create
-
-                        new procedures and buttons that allow you to shrink and expand the circle
-
-                        as it moves. (Warning: This is not trivial! Hint: Each turtle needs
-
-                        to "remember" its original heading.) </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">If
-
-                        you want to save the paintbrush project, select Save from the File menu
-
-                        in the Control Center menu bar. </font></p>
-
-                    <hr noshade="" align="left">
-
                 </td>
-
             </tr>
-
             <tr bgcolor="#FFFFFF">
-
                 <td height="25" colspan="2" valign="top">
-
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="25" bordercolor="#009900"
-                           rules="rows">
-
-                        <tbody>
-                        <tr bgcolor="#FFFFCC">
-                            <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font
-                                    color="#000000"><a name="SampleProjects"></a><font color="#006600">5.
-                                Sample Projects</font></font></b></font></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr bgcolor="#FFFFFF" align="right">
-
-                <td height="40" colspan="2" valign="top">
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Probably
-
-                        the best way to start learning about StarLogo is to play with some sample
-
-                        projects. The sample-projects folder includes a diverse collection of
-                        StarLogo projects. Try them! </font></p>
-
-                    <p align="left"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">Each
-
-                        sample project comes with a set of procedures (some combination of turtle
-
-                        procedures and observer procedures), a set of interface objects such
-
-                        as buttons and sliders (in the Interface area), and a set of explanatory
-
-                        notes (in the Information window, accessible through the Control Center
-
-                        menu bar). </font></p>
-
                 </td>
             </tr>
             </tbody>
