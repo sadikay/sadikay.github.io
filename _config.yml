@@ -2,6 +2,7 @@ name: Sadık Ay
 description: A bit software, a bit travel and completely freedom.
 
 url: http://sadikay.github.io
+baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -14,6 +15,8 @@ navigation:
  - title: Home
    url: /index.html
  - title: About
-   url: /about
+   url: /about.html
  - title: Contact
-   url: /contact
+   url: /contact.html
+
+google_analytics: "UA-64835177-1"   

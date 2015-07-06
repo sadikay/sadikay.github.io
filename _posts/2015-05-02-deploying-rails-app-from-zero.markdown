@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Step By Step Deploying Rails Application"
-date:   2015-04-12
+date:   2015-05-20
 ---
 <h3>Deploying Rails on Ubuntu Digitalocean, Nginx, Unicorn, Mina</h3>
 <p>In the this post I ll try to make I tutorial about deploying of Rails Applications
